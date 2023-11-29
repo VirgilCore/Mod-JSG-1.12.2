@@ -113,6 +113,7 @@ public class JSGItems {
     public static final Item CRYSTAL_YELLOW = ItemHelper.createGenericItem("crystal_yellow", JSG_ITEMS_CREATIVE_TAB);
     public static final Item CRYSTAL_WHITE = ItemHelper.createGenericItem("crystal_white", JSG_ITEMS_CREATIVE_TAB);
     public static final Item CRYSTAL_BLUE_PEGASUS = ItemHelper.createGenericItem("crystal_blue_pegasus", JSG_ITEMS_CREATIVE_TAB);
+    public static final Item CRYSTAL_REACTIVE = ItemHelper.createGenericItem("crystal_reactive", JSG_ITEMS_CREATIVE_TAB);
 
     public static final Item CRYSTAL_TOKRA = ItemHelper.createGenericItem("crystal_tokra", JSG_ITEMS_CREATIVE_TAB);
 
@@ -150,7 +151,7 @@ public class JSGItems {
     public static final Item JSG_SCREWDRIVER = ItemHelper.createDurabilityItem("screwdriver", JSG_TOOLS_CREATIVE_TAB, 150, true).setMaxStackSize(1);
     public static final Item JSG_WRENCH = ItemHelper.createDurabilityItem("wrench", JSG_TOOLS_CREATIVE_TAB, 225, true).setMaxStackSize(1);
 
-    public static final Item TAURI_ANCIENT_ADAPTER = ItemHelper.createGenericItem("tauri_ancient_adapter", JSG_ITEMS_CREATIVE_TAB);
+    // public static final Item TAURI_ANCIENT_ADAPTER = ItemHelper.createGenericItem("tauri_ancient_adapter", JSG_ITEMS_CREATIVE_TAB);
 
     public static final ItemAdminController ADMIN_CONTROLLER = new ItemAdminController();
 
@@ -258,6 +259,7 @@ public class JSGItems {
             CRYSTAL_WHITE,
             CRYSTAL_BLUE_PEGASUS,
             CRYSTAL_TOKRA,
+            CRYSTAL_REACTIVE,
 
             CRYSTAL_UPGRADE_CAPACITY,
             CRYSTAL_UPGRADE_EFFICIENCY,
