@@ -22,7 +22,7 @@ public class TConstructIntegration {
         List<MoltenMaterial> fluidList = new ArrayList<>();
         fluidList.add(JSGFluids.MOLTEN_TITANIUM);
         fluidList.add(JSGFluids.MOLTEN_TRINIUM);
-
+        fluidList.add(JSGFluids.NAQUADAH_MOLTEN_RAW);
         fluidList.add(JSGFluids.NAQUADAH_MOLTEN_REFINED);
         fluidList.add(JSGFluids.MOLTEN_NAQUADAH_ALLOY);
 
