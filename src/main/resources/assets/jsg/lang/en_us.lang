@@ -89,7 +89,7 @@ advancement.zpm_slot.desc=Use ZPM slot
 advancement.upgrade_shield.title=Using power, using power...
 advancement.upgrade_shield.desc=Obtain stargate shield
 
-advancement.beamer.title=Wireless Resource Transport
+advancement.beamer.title=Beam me out!
 advancement.beamer.desc=Obtain a beamer
 
 advancement.titanium.title=Getting harder and tougher
@@ -104,7 +104,7 @@ advancement.naquadah_alloy.desc=Craft a naquadah alloy ingot
 advancement.trinium.title=Did you ask Xe´ls and T´akaya?!
 advancement.trinium.desc=Obtain a trinium ingot
 
-advancement.unstable_eh_survive.title=For a moment there I thought we were in trouble
+advancement.unstable_eh_survive.title=For a moment there, I thought we were in trouble
 advancement.unstable_eh_survive.desc=Enter an unstable wormhole and survive
 
 advancement.tokra_crystal.title=They live underground
@@ -134,7 +134,7 @@ advancement.pcb.desc=Craft a PCB Fabricator
 advancement.ore_washing.title=Mine, Wash, Smelt, Repeat.
 advancement.ore_washing.desc=Craft an Ore Washing Machine
 
-advancement.chemicals.title=Is it Janus' secret lab?
+advancement.chemicals.title=Is this Janus' secret lab?
 advancement.chemicals.desc=Craft an Ancient Chemical Lab
 
 advancement.refined_naquadah.title=Now that's HOT stuff
