@@ -19,6 +19,7 @@ public class ThermalIntegration {
 		ThermalExpansionHelper.addCrucibleRecipe(defaultEnergy, new ItemStack(Blocks.SAND), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/8));
 		
 		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.REDSTONE), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/5), new FluidStack(JSGFluids.SILICON_MOLTEN_RED, oneIngot/4));
+		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.BLAZE_POWDER), new FluidStack(JSGFluids.SILICON_MOLTEN_RED, oneIngot/5), new FluidStack(JSGFluids.SILICON_MOLTEN_REACTIVE, oneIngot/4));
 		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.DYE, 1, 4), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/5), new FluidStack(JSGFluids.SILICON_MOLTEN_BLUE, oneIngot/4));
 		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.ENDER_PEARL), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/5*4), new FluidStack(JSGFluids.SILICON_MOLTEN_ENDER, oneIngot));
 		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.GLOWSTONE_DUST), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/5), new FluidStack(JSGFluids.SILICON_MOLTEN_YELLOW, oneIngot/4));
