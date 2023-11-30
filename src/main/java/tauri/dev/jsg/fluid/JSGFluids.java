@@ -15,6 +15,7 @@ public class JSGFluids {
     public static final MoltenFluid SILICON_MOLTEN_PEGASUS = new MoltenFluid("silicon_molten_pegasus");
     public static final MoltenFluid SILICON_MOLTEN_YELLOW = new MoltenFluid("silicon_molten_yellow");
     public static final MoltenFluid SILICON_MOLTEN_WHITE = new MoltenFluid("silicon_molten_white");
+    public static final MoltenFluid SILICON_MOLTEN_REACTIVE = new MoltenFluid("silicon_molten_reactive");
     public static final MoltenFluid NAQUADAH_MOLTEN_RAW = new MoltenMaterial("naquadah_molten_raw", "liquidNaquadahRaw");
     public static final MoltenMaterial NAQUADAH_MOLTEN_REFINED = new MoltenMaterial("naquadah_molten_refined", "liquidNaquadahRefined");
     public static final MoltenMaterial MOLTEN_NAQUADAH_ALLOY = new MoltenMaterial("naquadah_molten_alloy", "liquidNaquadahAlloy");
@@ -30,6 +31,7 @@ public class JSGFluids {
             SILICON_MOLTEN_PEGASUS,
             SILICON_MOLTEN_YELLOW,
             SILICON_MOLTEN_WHITE,
+            SILICON_MOLTEN_REACTIVE,
 
             NAQUADAH_MOLTEN_RAW,
             NAQUADAH_MOLTEN_REFINED,

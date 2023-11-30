@@ -19,6 +19,7 @@ public class ThermalIntegration {
 		ThermalExpansionHelper.addCrucibleRecipe(defaultEnergy, new ItemStack(Blocks.SAND), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/8));
 		
 		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.REDSTONE), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/5), new FluidStack(JSGFluids.SILICON_MOLTEN_RED, oneIngot/4));
+		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.BLAZE_POWDER), new FluidStack(JSGFluids.SILICON_MOLTEN_RED, oneIngot/5), new FluidStack(JSGFluids.SILICON_MOLTEN_REACTIVE, oneIngot/4));
 		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.DYE, 1, 4), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/5), new FluidStack(JSGFluids.SILICON_MOLTEN_BLUE, oneIngot/4));
 		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.ENDER_PEARL), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/5*4), new FluidStack(JSGFluids.SILICON_MOLTEN_ENDER, oneIngot));
 		ThermalExpansionHelper.addBrewerRecipe(defaultEnergy*3, new ItemStack(Items.GLOWSTONE_DUST), new FluidStack(JSGFluids.SILICON_MOLTEN_BLACK, oneIngot/5), new FluidStack(JSGFluids.SILICON_MOLTEN_YELLOW, oneIngot/4));
@@ -30,6 +31,7 @@ public class ThermalIntegration {
 		ThermalExpansionHelper.addCompactorRecipe(defaultEnergy*5, new ItemStack(Items.QUARTZ, 4), new ItemStack(JSGItems.CRYSTAL_SEED));
 		
 		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_RED), new FluidStack(JSGFluids.SILICON_MOLTEN_RED, oneIngot), false);
+		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_REACTIVE), new FluidStack(JSGFluids.SILICON_MOLTEN_REACTIVE, oneIngot), false);
 		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_BLUE), new FluidStack(JSGFluids.SILICON_MOLTEN_BLUE, oneIngot), false);
 		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_ENDER), new FluidStack(JSGFluids.SILICON_MOLTEN_ENDER, oneIngot), false);
 		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_YELLOW), new FluidStack(JSGFluids.SILICON_MOLTEN_YELLOW, oneIngot), false);

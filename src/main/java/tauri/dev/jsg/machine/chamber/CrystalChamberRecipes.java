@@ -31,6 +31,28 @@ public class CrystalChamberRecipes {
             return 512;
         }
     };
+        public static final CrystalChamberRecipe CRYSTAL_REACTIVE = new CrystalChamberRecipe() {
+
+        @Override
+        public int getWorkingTime() {
+            return 200;
+        }
+
+        @Override
+        public FluidStack getSubFluidStack() {
+            return new FluidStack(JSGFluids.SILICON_MOLTEN_REACTIVE, ONE_INGOT_IN_FLUID_MB);
+        }
+
+        @Override
+        public ItemStack getResult() {
+            return new ItemStack(JSGItems.CRYSTAL_REACTIVE);
+        }
+
+        @Override
+        public int getEnergyPerTick() {
+            return 512;
+        }
+    };
     public static final CrystalChamberRecipe CRYSTAL_RED = new CrystalChamberRecipe() {
 
         @Override
