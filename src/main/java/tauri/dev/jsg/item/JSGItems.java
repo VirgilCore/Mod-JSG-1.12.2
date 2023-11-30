@@ -297,7 +297,7 @@ public class JSGItems {
             JSG_HAMMER,
             JSG_SCREWDRIVER,
             JSG_WRENCH,
-            TAURI_ANCIENT_ADAPTER,
+            // TAURI_ANCIENT_ADAPTER,
             ADMIN_CONTROLLER,
 
             GEAR_TITANIUM,
