@@ -31,6 +31,7 @@ public class ThermalIntegration {
 		ThermalExpansionHelper.addCompactorRecipe(defaultEnergy*5, new ItemStack(Items.QUARTZ, 4), new ItemStack(JSGItems.CRYSTAL_SEED));
 		
 		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_RED), new FluidStack(JSGFluids.SILICON_MOLTEN_RED, oneIngot), false);
+		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_REACTIVE), new FluidStack(JSGFluids.SILICON_MOLTEN_REACTIVE, oneIngot), false);
 		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_BLUE), new FluidStack(JSGFluids.SILICON_MOLTEN_BLUE, oneIngot), false);
 		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_ENDER), new FluidStack(JSGFluids.SILICON_MOLTEN_ENDER, oneIngot), false);
 		ThermalExpansionHelper.addTransposerFill(defaultEnergy*7, new ItemStack(JSGItems.CRYSTAL_SEED), new ItemStack(JSGItems.CRYSTAL_YELLOW), new FluidStack(JSGFluids.SILICON_MOLTEN_YELLOW, oneIngot), false);
