@@ -115,8 +115,8 @@ public enum SoundEventEnum implements EnumKeyInterface<Integer> {
 
     // ----------------------------------------------------------
     // Misc
-    GATE_NOX_OPEN(160, "gate_nox_open", 0.4f);
-
+    GATE_NOX_OPEN(160, "gate_nox_open", 0.4f),
+    WASHER_TOGGLE(161, "washer_toggle", 0.5f);
 
     // ----------------------------------------------------------
 

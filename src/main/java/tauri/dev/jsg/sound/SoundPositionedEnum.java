@@ -22,6 +22,7 @@ public enum SoundPositionedEnum {
     // loops
     BEAMER_LOOP(3, "beamer_loop", JSG.JSG_SOUNDS, true, 0.3f),
     WORMHOLE_LOOP(1, "wormhole_loop", JSG.JSG_SOUNDS, true, 0.4f),
+    WASHER_LOOP(17, "washer_loop", JSG.JSG_SOUNDS, true, 0.4f),
 
     // main menu
     MAINMENU_MUSIC(6, "mainmenu_music", JSG.JSG_SOUNDS, false, 0.05f),
