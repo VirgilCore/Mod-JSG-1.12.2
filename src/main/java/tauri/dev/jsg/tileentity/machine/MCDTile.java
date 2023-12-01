@@ -3,14 +3,14 @@ package tauri.dev.jsg.tileentity.machine;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import tauri.dev.jsg.block.machine.AssemblerBlock;
-import tauri.dev.jsg.gui.container.machine.assembler.AssemblerContainerGuiUpdate;
+import tauri.dev.jsg.gui.container.machine.assembler.MCDContainerGuiUpdate;
 import tauri.dev.jsg.item.JSGItems;
 import tauri.dev.jsg.machine.AbstractMachineRecipe;
-import tauri.dev.jsg.machine.assembler.AssemblerRecipe;
-import tauri.dev.jsg.machine.assembler.AssemblerRecipes;
+import tauri.dev.jsg.machine.assembler.MCDRecipe;
+import tauri.dev.jsg.machine.assembler.MCDRecipes;
 import tauri.dev.jsg.power.general.SmallEnergyStorage;
 import tauri.dev.jsg.renderer.machine.AbstractMachineRendererState;
-import tauri.dev.jsg.renderer.machine.AssemblerRendererState;
+import tauri.dev.jsg.renderer.machine.MCDRendererState;
 import tauri.dev.jsg.sound.JSGSoundHelper;
 import tauri.dev.jsg.sound.SoundEventEnum;
 import tauri.dev.jsg.sound.SoundPositionedEnum;
@@ -23,8 +23,8 @@ import java.util.ArrayList;
 
 import static tauri.dev.jsg.item.JSGItems.*;
 
-public class AssemblerTile extends AbstractMachineTile {
-    public AssemblerRendererState rendererState = new AssemblerRendererState();
+public class MCDTile extends AbstractMachineTile {
+    public MCDRendererState rendererState = new MCDRendererState();
     public static final int CONTAINER_SIZE = 12;
     public static Item[] getAllowedSchematics() {
         return new Item[]{
@@ -97,14 +97,14 @@ public class AssemblerTile extends AbstractMachineTile {
         Item scheme = itemStackHandler.getStackInSlot(0).getItem();
         ItemStack subStack = itemStackHandler.getStackInSlot(10);
 
-        if(currentRecipe instanceof AssemblerRecipe){
-            AssemblerRecipe recipe = (AssemblerRecipe) currentRecipe;
+        if(currentRecipe instanceof MCDRecipe){
+            MCDRecipe recipe = (MCDRecipe) currentRecipe;
             if (!itemStackHandler.insertItem(11, recipe.getResult(), true).equals(ItemStack.EMPTY)) return null;
             if (recipe.isOk(energyStorage.getEnergyStored(), scheme, stacks, subStack)) return recipe;
             return null;
         }
 
-        for (AssemblerRecipe recipe : AssemblerRecipes.RECIPES) {
+        for (MCDRecipe recipe : MCDRecipes.RECIPES) {
             if (!itemStackHandler.insertItem(11, recipe.getResult(), true).equals(ItemStack.EMPTY)) continue;
             if (recipe.isOk(energyStorage.getEnergyStored(), scheme, stacks, subStack)) return recipe;
         }
@@ -114,7 +114,7 @@ public class AssemblerTile extends AbstractMachineTile {
 
     protected void workIsDone() {
         if (!isWorking) return;
-        AssemblerRecipe currentRecipe = (AssemblerRecipe) this.currentRecipe;
+        MCDRecipe currentRecipe = (MCDRecipe) this.currentRecipe;
         itemStackHandler.insertItem(11, currentRecipe.getResult(), false);
         for (int i = 1; i < 10; i++) {
             int amount = 0;
@@ -133,10 +133,10 @@ public class AssemblerTile extends AbstractMachineTile {
     public State getState(StateTypeEnum stateType) {
         switch (stateType) {
             case GUI_UPDATE:
-                return new AssemblerContainerGuiUpdate(energyStorage.getEnergyStored(), energyTransferedLastTick, machineStart, machineEnd);
+                return new MCDContainerGuiUpdate(energyStorage.getEnergyStored(), energyTransferedLastTick, machineStart, machineEnd);
             case RENDERER_UPDATE:
-                ItemStack stack = currentRecipe != null ? ((AssemblerRecipe) currentRecipe).getResult() : itemStackHandler.getStackInSlot(11);
-                return new AssemblerRendererState(workStateChanged, machineProgress, isWorking, stack);
+                ItemStack stack = currentRecipe != null ? ((MCDRecipe) currentRecipe).getResult() : itemStackHandler.getStackInSlot(11);
+                return new MCDRendererState(workStateChanged, machineProgress, isWorking, stack);
         }
         return null;
     }
@@ -145,9 +145,9 @@ public class AssemblerTile extends AbstractMachineTile {
     public State createState(StateTypeEnum stateType) {
         switch (stateType) {
             case GUI_UPDATE:
-                return new AssemblerContainerGuiUpdate();
+                return new MCDContainerGuiUpdate();
             case RENDERER_UPDATE:
-                return new AssemblerRendererState();
+                return new MCDRendererState();
         }
         return null;
     }
@@ -156,7 +156,7 @@ public class AssemblerTile extends AbstractMachineTile {
     public void setState(StateTypeEnum stateType, State state) {
         switch (stateType) {
             case GUI_UPDATE:
-                AssemblerContainerGuiUpdate guiUpdate = (AssemblerContainerGuiUpdate) state;
+                MCDContainerGuiUpdate guiUpdate = (MCDContainerGuiUpdate) state;
                 energyStorage.setEnergyStored(guiUpdate.energyStored);
                 energyTransferedLastTick = guiUpdate.energyTransferedLastTick;
                 machineStart = guiUpdate.machineStart;
@@ -164,7 +164,7 @@ public class AssemblerTile extends AbstractMachineTile {
                 markDirty();
                 break;
             case RENDERER_UPDATE:
-                rendererState = (AssemblerRendererState) state;
+                rendererState = (MCDRendererState) state;
                 this.machineProgress = rendererState.machineProgress;
                 this.isWorking = rendererState.isWorking;
                 markDirty();

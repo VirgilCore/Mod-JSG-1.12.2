@@ -9,18 +9,18 @@ import tauri.dev.jsg.beamer.BeamerBeam;
 import tauri.dev.jsg.beamer.BeamerRoleEnum;
 import tauri.dev.jsg.particle.ParticleBlenderSmoke;
 import tauri.dev.jsg.renderer.BlockRenderer;
-import tauri.dev.jsg.tileentity.machine.PCBFabricatorTile;
+import tauri.dev.jsg.tileentity.machine.CircuitFabricatorTile;
 import tauri.dev.jsg.util.FacingHelper;
 import tauri.dev.jsg.util.main.JSGProps;
 
 import javax.annotation.Nonnull;
 
 @SideOnly(Side.CLIENT)
-public class PCBFabricatorRenderer extends TileEntitySpecialRenderer<PCBFabricatorTile> {
+public class CircuitFabricatorRenderer extends TileEntitySpecialRenderer<CircuitFabricatorTile> {
 
     @Override
-    public void render(@Nonnull PCBFabricatorTile te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
-        PCBFabricatorRendererState rendererState = (PCBFabricatorRendererState) te.getRendererState();
+    public void render(@Nonnull CircuitFabricatorTile te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
+        CircuitFabricatorRendererState rendererState = (CircuitFabricatorRendererState) te.getRendererState();
         if (rendererState != null) {
             long tick = te.getWorld().getTotalWorldTime();
 

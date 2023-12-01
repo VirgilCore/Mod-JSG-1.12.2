@@ -17,7 +17,7 @@ import tauri.dev.jsg.integration.jei.AbstractJEIRecipe;
 
 import javax.annotation.Nonnull;
 
-public class JEIPCBFabricatorRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> {
+public class JEICircuitFabricatorRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> {
 
     public static final String UID = "jsg_circuit_fabricator";
     public static final ResourceLocation BACK_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_circuit_fabricator_jei.png");
@@ -27,7 +27,7 @@ public class JEIPCBFabricatorRecipeCategory implements IRecipeCategory<AbstractJ
     public final IDrawable progressBar;
     public final IDrawable fluidMeter;
 
-    public JEIPCBFabricatorRecipeCategory(IGuiHelper helper) {
+    public JEICircuitFabricatorRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(BACK_TEXTURE, 0, 0, 137, 55);
         this.fluidMeter = helper.createDrawable(BACK_TEXTURE, 176, 32, 16, 54);
         this.icon = helper.createDrawableIngredient(new ItemStack(JSGBlocks.MACHINE_circuit_fabricator));

@@ -7,7 +7,7 @@ import tauri.dev.jsg.machine.AbstractMachineRecipe;
 
 import java.util.ArrayList;
 
-public abstract class AssemblerRecipe extends AbstractMachineRecipe {
+public abstract class MCDRecipe extends AbstractMachineRecipe {
     public static final String ID = "Molecular Construction Device";
 
     public abstract Item getSchematic();

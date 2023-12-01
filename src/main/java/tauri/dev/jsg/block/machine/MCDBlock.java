@@ -16,8 +16,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import tauri.dev.jsg.JSG;
 import tauri.dev.jsg.gui.GuiIdEnum;
 import tauri.dev.jsg.item.machine.MachineItemBlock;
-import tauri.dev.jsg.renderer.machine.AssemblerRenderer;
-import tauri.dev.jsg.tileentity.machine.AssemblerTile;
+import tauri.dev.jsg.renderer.machine.MCDRenderer;
+import tauri.dev.jsg.tileentity.machine.MCDTile;
 import tauri.dev.jsg.util.JSGAxisAlignedBB;
 
 import javax.annotation.Nonnull;
@@ -34,18 +34,18 @@ public class AssemblerBlock extends AbstractMachineBlock {
 
     @Override
     public TileEntity createTileEntity(@Nonnull World world, @Nonnull IBlockState state) {
-        return new AssemblerTile();
+        return new MCDTile();
     }
 
     @Override
     public Class<? extends TileEntity> getTileEntityClass() {
-        return AssemblerTile.class;
+        return MCDTile.class;
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public TileEntitySpecialRenderer<? extends TileEntity> getTESR() {
-        return new AssemblerRenderer();
+        return new MCDRenderer();
     }
 
     @Override
@@ -56,7 +56,7 @@ public class AssemblerBlock extends AbstractMachineBlock {
     @Override
     public void breakBlock(World world, @Nonnull BlockPos pos, @Nonnull IBlockState state) {
         if (!world.isRemote) {
-            AssemblerTile tile = (AssemblerTile) world.getTileEntity(pos);
+            MCDTile tile = (MCDTile) world.getTileEntity(pos);
             if (tile != null) {
                 tile.onBreak();
             }

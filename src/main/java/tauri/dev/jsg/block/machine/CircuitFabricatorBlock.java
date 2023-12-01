@@ -15,8 +15,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import tauri.dev.jsg.JSG;
 import tauri.dev.jsg.gui.GuiIdEnum;
 import tauri.dev.jsg.item.machine.MachineItemBlock;
-import tauri.dev.jsg.renderer.machine.PCBFabricatorRenderer;
-import tauri.dev.jsg.tileentity.machine.PCBFabricatorTile;
+import tauri.dev.jsg.renderer.machine.CircuitFabricatorRenderer;
+import tauri.dev.jsg.tileentity.machine.CircuitFabricatorTile;
 
 import javax.annotation.Nonnull;
 
@@ -32,18 +32,18 @@ public class PCBFabricatorBlock extends AbstractMachineBlock {
 
     @Override
     public TileEntity createTileEntity(@Nonnull World world, @Nonnull IBlockState state) {
-        return new PCBFabricatorTile();
+        return new CircuitFabricatorTile();
     }
 
     @Override
     public Class<? extends TileEntity> getTileEntityClass() {
-        return PCBFabricatorTile.class;
+        return CircuitFabricatorTile.class;
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public TileEntitySpecialRenderer<? extends TileEntity> getTESR() {
-        return new PCBFabricatorRenderer();
+        return new CircuitFabricatorRenderer();
     }
 
     @Override
@@ -55,7 +55,7 @@ public class PCBFabricatorBlock extends AbstractMachineBlock {
     @Override
     public void breakBlock(World world, @Nonnull BlockPos pos, @Nonnull IBlockState state) {
         if (!world.isRemote) {
-            PCBFabricatorTile tile = (PCBFabricatorTile) world.getTileEntity(pos);
+            CircuitFabricatorTile tile = (CircuitFabricatorTile) world.getTileEntity(pos);
             if (tile != null) {
                 tile.onBreak();
             }

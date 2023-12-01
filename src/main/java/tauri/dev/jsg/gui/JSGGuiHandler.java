@@ -14,14 +14,14 @@ import tauri.dev.jsg.gui.container.dhd.DHDMilkyWayContainer;
 import tauri.dev.jsg.gui.container.dhd.DHDMilkyWayContainerGui;
 import tauri.dev.jsg.gui.container.dhd.DHDPegasusContainer;
 import tauri.dev.jsg.gui.container.dhd.DHDPegasusContainerGui;
-import tauri.dev.jsg.gui.container.machine.assembler.AssemblerContainer;
-import tauri.dev.jsg.gui.container.machine.assembler.AssemblerContainerGui;
+import tauri.dev.jsg.gui.container.machine.assembler.MCDContainer;
+import tauri.dev.jsg.gui.container.machine.assembler.MCDContainerGui;
 import tauri.dev.jsg.gui.container.machine.crystalchamber.CrystalChamberContainer;
 import tauri.dev.jsg.gui.container.machine.crystalchamber.CrystalChamberContainerGui;
 import tauri.dev.jsg.gui.container.machine.orewashing.OreWashingContainer;
 import tauri.dev.jsg.gui.container.machine.orewashing.OreWashingContainerGui;
-import tauri.dev.jsg.gui.container.machine.pcbfabricator.PCBFabricatorContainer;
-import tauri.dev.jsg.gui.container.machine.pcbfabricator.PCBFabricatorContainerGui;
+import tauri.dev.jsg.gui.container.machine.pcbfabricator.CircuitFabricatorContainer;
+import tauri.dev.jsg.gui.container.machine.pcbfabricator.CircuitFabricatorContainerGui;
 import tauri.dev.jsg.gui.container.stargate.StargateContainer;
 import tauri.dev.jsg.gui.container.stargate.StargateContainerGui;
 import tauri.dev.jsg.gui.container.transportrings.TRContainer;
@@ -58,13 +58,13 @@ public class JSGGuiHandler implements IGuiHandler {
                 return new TRContainer(player.inventory, world, x, y, z, isOp);
 
             case GUI_ASSEMBLER:
-                return new AssemblerContainer(player.inventory, world, x, y, z);
+                return new MCDContainer(player.inventory, world, x, y, z);
 
             case GUI_CRYSTAL_CHAMBER:
                 return new CrystalChamberContainer(player.inventory, world, x, y, z);
 
             case GUI_circuit_fabricator:
-                return new PCBFabricatorContainer(player.inventory, world, x, y, z);
+                return new CircuitFabricatorContainer(player.inventory, world, x, y, z);
 
             case GUI_ORE_WASHING:
                 return new OreWashingContainer(player.inventory, world, x, y, z);
@@ -105,13 +105,13 @@ public class JSGGuiHandler implements IGuiHandler {
                 return new TRGui(new BlockPos(x, y, z), new TRContainer(player.inventory, world, x, y, z, isOp));
 
             case GUI_ASSEMBLER:
-                return new AssemblerContainerGui(new AssemblerContainer(player.inventory, world, x, y, z));
+                return new MCDContainerGui(new MCDContainer(player.inventory, world, x, y, z));
 
             case GUI_CRYSTAL_CHAMBER:
                 return new CrystalChamberContainerGui(new CrystalChamberContainer(player.inventory, world, x, y, z));
 
             case GUI_circuit_fabricator:
-                return new PCBFabricatorContainerGui(new PCBFabricatorContainer(player.inventory, world, x, y, z));
+                return new CircuitFabricatorContainerGui(new CircuitFabricatorContainer(player.inventory, world, x, y, z));
 
             case GUI_ORE_WASHING:
                 return new OreWashingContainerGui(new OreWashingContainer(player.inventory, world, x, y, z));

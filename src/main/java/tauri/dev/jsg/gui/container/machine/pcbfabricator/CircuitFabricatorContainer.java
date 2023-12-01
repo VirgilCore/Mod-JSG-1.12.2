@@ -1,4 +1,4 @@
-package tauri.dev.jsg.gui.container.machine.assembler;
+package tauri.dev.jsg.gui.container.machine.pcbfabricator;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -10,6 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.energy.CapabilityEnergy;
+import net.minecraftforge.fluids.FluidTank;
+import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -21,20 +23,23 @@ import tauri.dev.jsg.packet.JSGPacketHandler;
 import tauri.dev.jsg.packet.StateUpdatePacketToClient;
 import tauri.dev.jsg.power.general.SmallEnergyStorage;
 import tauri.dev.jsg.state.StateTypeEnum;
-import tauri.dev.jsg.tileentity.machine.AssemblerTile;
+import tauri.dev.jsg.tileentity.machine.CircuitFabricatorTile;
 
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
 
-import static tauri.dev.jsg.tileentity.machine.AssemblerTile.CONTAINER_SIZE;
-import static tauri.dev.jsg.tileentity.machine.AssemblerTile.getAllowedSchematics;
+import static tauri.dev.jsg.tileentity.machine.CircuitFabricatorTile.CONTAINER_SIZE;
 
-public class AssemblerContainer extends JSGContainer {
 
-    public AssemblerTile tile;
+public class CircuitFabricatorContainer extends JSGContainer {
+
+    public CircuitFabricatorTile tile;
+    public FluidTank tank;
+
     public ArrayList<Slot> slots = new ArrayList<>();
     private final BlockPos pos;
     private int lastEnergyStored;
+    private int lastFluidStored;
     private int energyTransferedLastTick;
 
     private long machineStart = 0;
@@ -54,30 +59,30 @@ public class AssemblerContainer extends JSGContainer {
 
     @Override
     public Block[] getAllowedBlocks() {
-        return new Block[]{JSGBlocks.MACHINE_ASSEMBLER};
+        return new Block[]{JSGBlocks.MACHINE_circuit_fabricator};
     }
 
-    public AssemblerContainer(IInventory playerInventory, World world, int x, int y, int z) {
+    public CircuitFabricatorContainer(IInventory playerInventory, World world, int x, int y, int z) {
         pos = new BlockPos(x, y, z);
         this.world = world;
-        tile = (AssemblerTile) world.getTileEntity(pos);
+        tile = (CircuitFabricatorTile) world.getTileEntity(pos);
         if (tile != null) {
             IItemHandler itemHandler = tile.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 
-            slots.add(new SlotItemHandler(itemHandler, 0, 10, 65));
+            tank = (FluidTank) tile.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null);
+
             int i = 0;
             for (int y1 = 0; y1 < 3; y1++) {
                 for (int x1 = 0; x1 < 3; x1++) {
-                    slots.add(new SlotItemHandler(itemHandler, 1 + i, 34 + (18 * x1), 47 + (18 * y1)));
+                    slots.add(new SlotItemHandler(itemHandler, i, 16 + (18 * x1), 16 + (18 * y1)));
                     i++;
                 }
             }
-            slots.add(new SlotItemHandler(itemHandler, ++i, 102, 65));
-            slots.add(new SlotItemHandler(itemHandler, ++i, 146, 65));
+            slots.add(new SlotItemHandler(itemHandler, 9, 132, 33));
             for (Slot slot : slots)
                 addSlotToContainer(slot);
 
-            for (Slot slot : ContainerHelper.generatePlayerSlots(playerInventory, 149))
+            for (Slot slot : ContainerHelper.generatePlayerSlots(playerInventory, 94))
                 addSlotToContainer(slot);
         }
     }
@@ -92,7 +97,7 @@ public class AssemblerContainer extends JSGContainer {
             returnStack = stack.copy();
 
             if (slotId == 0) {
-                if (!(JSGItems.isInItemsArray(stack.getItem(), getAllowedSchematics()))) return ItemStack.EMPTY;
+                if (stack.getItem() != JSGItems.CRYSTAL_SEED) return ItemStack.EMPTY;
             }
 
             if (slotId < CONTAINER_SIZE) {
@@ -121,18 +126,25 @@ public class AssemblerContainer extends JSGContainer {
 
         SmallEnergyStorage energyStorage = (SmallEnergyStorage) tile.getCapability(CapabilityEnergy.ENERGY, null);
 
-        if (machineStart != tile.getMachineStart() || machineEnd != tile.getMachineEnd() || (energyStorage != null && (lastEnergyStored != energyStorage.getEnergyStored() || energyTransferedLastTick != tile.getEnergyTransferedLastTick()))) {
+        if (machineStart != tile.getMachineStart()
+                || machineEnd != tile.getMachineEnd()
+                || (energyStorage != null && (lastEnergyStored != energyStorage.getEnergyStored()
+                || energyTransferedLastTick != tile.getEnergyTransferedLastTick()))
+                || lastFluidStored != tank.getFluidAmount()
+        ) {
             for (IContainerListener listener : listeners) {
                 if (listener instanceof EntityPlayerMP) {
                     JSGPacketHandler.INSTANCE.sendTo(new StateUpdatePacketToClient(pos, StateTypeEnum.GUI_UPDATE, tile.getState(StateTypeEnum.GUI_UPDATE)), (EntityPlayerMP) listener);
                 }
             }
 
-            if(energyStorage == null) return;
+            if (energyStorage == null) return;
             lastEnergyStored = energyStorage.getEnergyStored();
             energyTransferedLastTick = tile.getEnergyTransferedLastTick();
             machineStart = tile.getMachineStart();
             machineEnd = tile.getMachineEnd();
+            lastFluidStored = tank.getFluidAmount();
         }
     }
+
 }

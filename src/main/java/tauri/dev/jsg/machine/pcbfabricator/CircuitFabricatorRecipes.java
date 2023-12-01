@@ -6,15 +6,14 @@ import net.minecraftforge.fluids.FluidStack;
 import tauri.dev.jsg.config.craftings.CraftingConfig;
 import tauri.dev.jsg.fluid.JSGFluids;
 import tauri.dev.jsg.item.JSGItems;
-import tauri.dev.jsg.util.FluidColors;
 
 import java.util.ArrayList;
 
 import static tauri.dev.jsg.Constants.ONE_INGOT_IN_FLUID_MB;
 
-public class PCBFabricatorRecipes {
+public class CircuitFabricatorRecipes {
 
-    public static PCBFabricatorRecipe CIRCUIT_CONTROL_CRYSTAL = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe CIRCUIT_CONTROL_CRYSTAL = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -57,7 +56,7 @@ public class PCBFabricatorRecipes {
             return new float[]{1f, 1f, 1f};
         }
     };
-    public static PCBFabricatorRecipe CIRCUIT_CONTROL_NAQUADAH = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe CIRCUIT_CONTROL_NAQUADAH = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.MOLTEN_NAQUADAH_ALLOY, ONE_INGOT_IN_FLUID_MB);
@@ -101,7 +100,7 @@ public class PCBFabricatorRecipes {
         }
     };
 
-    public static PCBFabricatorRecipe SG_CRYSTAL_GLYPH = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe SG_CRYSTAL_GLYPH = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -144,7 +143,7 @@ public class PCBFabricatorRecipes {
             return new float[]{1f, 1f, 1f};
         }
     };
-    public static PCBFabricatorRecipe SG_CRYSTAL_MILKYWAY = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe SG_CRYSTAL_MILKYWAY = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -187,7 +186,7 @@ public class PCBFabricatorRecipes {
             return new float[]{1f, 1f, 1f};
         }
     };
-    public static PCBFabricatorRecipe SG_crystal_aqua = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe SG_crystal_aqua = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -230,7 +229,7 @@ public class PCBFabricatorRecipes {
             return new float[]{1f, 1f, 1f};
         }
     };
-    public static PCBFabricatorRecipe SG_CRYSTAL_UNIVERSE = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe SG_CRYSTAL_UNIVERSE = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -274,7 +273,7 @@ public class PCBFabricatorRecipes {
         }
     };
 
-    public static PCBFabricatorRecipe TR_CRYSTAL_GOAULD = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe TR_CRYSTAL_GOAULD = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.NAQUADAH_MOLTEN_RAW, ONE_INGOT_IN_FLUID_MB);
@@ -317,7 +316,7 @@ public class PCBFabricatorRecipes {
             return new float[]{0.22f, 0.31f, 0.26f};
         }
     };
-    public static PCBFabricatorRecipe TR_CRYSTAL_ORI = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe TR_CRYSTAL_ORI = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -360,7 +359,7 @@ public class PCBFabricatorRecipes {
             return new float[]{1f, 1f, 1f};
         }
     };
-    public static PCBFabricatorRecipe TR_CRYSTAL_ANCIENT = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe TR_CRYSTAL_ANCIENT = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -404,7 +403,7 @@ public class PCBFabricatorRecipes {
         }
     };
 
-    public static PCBFabricatorRecipe DHD_CRYSTAL_GLYPH = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe DHD_CRYSTAL_GLYPH = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -447,7 +446,7 @@ public class PCBFabricatorRecipes {
             return new float[]{1f, 1f, 1f};
         }
     };
-    public static PCBFabricatorRecipe DHD_CRYSTAL_CONTROL_PEGASUS = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe DHD_CRYSTAL_CONTROL_PEGASUS = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -491,7 +490,7 @@ public class PCBFabricatorRecipes {
         }
     };
 
-    public static PCBFabricatorRecipe UPGRADE_CAPACITY = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe UPGRADE_CAPACITY = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -534,7 +533,7 @@ public class PCBFabricatorRecipes {
             return new float[]{1f, 1f, 1f};
         }
     };
-    public static PCBFabricatorRecipe UPGRADE_EFFICIENCY = new PCBFabricatorRecipe() {
+    public static CircuitFabricatorRecipe UPGRADE_EFFICIENCY = new CircuitFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -578,7 +577,7 @@ public class PCBFabricatorRecipes {
         }
     };
 
-    public static final PCBFabricatorRecipe[] RECIPES = {
+    public static final CircuitFabricatorRecipe[] RECIPES = {
             CIRCUIT_CONTROL_CRYSTAL,
             CIRCUIT_CONTROL_NAQUADAH,
 
@@ -599,8 +598,8 @@ public class PCBFabricatorRecipes {
     };
 
     public static void addToConfig() {
-        CraftingConfig config = new CraftingConfig(PCBFabricatorRecipe.ID);
-        for (PCBFabricatorRecipe recipe : RECIPES) {
+        CraftingConfig config = new CraftingConfig(CircuitFabricatorRecipe.ID);
+        for (CircuitFabricatorRecipe recipe : RECIPES) {
             config.addKey(recipe.getResult().getItem().getRegistryName());
         }
         CraftingConfig.addConfig(config);

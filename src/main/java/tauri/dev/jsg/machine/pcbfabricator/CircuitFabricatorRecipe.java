@@ -7,7 +7,7 @@ import tauri.dev.jsg.machine.AbstractMachineRecipe;
 
 import java.util.ArrayList;
 
-public abstract class PCBFabricatorRecipe extends AbstractMachineRecipe {
+public abstract class CircuitFabricatorRecipe extends AbstractMachineRecipe {
     public static final String ID = "PCB Fabricator";
 
     public abstract FluidStack getSubFluidStack();

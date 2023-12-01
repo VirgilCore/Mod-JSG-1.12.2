@@ -9,17 +9,17 @@ import tauri.dev.jsg.loader.texture.TextureLoader;
 import tauri.dev.jsg.particle.ParticleBlenderAtoms;
 import tauri.dev.jsg.renderer.BlockRenderer;
 import tauri.dev.jsg.renderer.biomes.BiomeOverlayEnum;
-import tauri.dev.jsg.tileentity.machine.AssemblerTile;
+import tauri.dev.jsg.tileentity.machine.MCDTile;
 import tauri.dev.jsg.util.JSGTextureLightningHelper;
 
 import javax.annotation.Nonnull;
 
 @SideOnly(Side.CLIENT)
-public class AssemblerRenderer extends TileEntitySpecialRenderer<AssemblerTile> {
+public class MCDRenderer extends TileEntitySpecialRenderer<MCDTile> {
 
     @Override
-    public void render(@Nonnull AssemblerTile te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
-        AssemblerRendererState rendererState = (AssemblerRendererState) te.getRendererState();
+    public void render(@Nonnull MCDTile te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
+        MCDRendererState rendererState = (MCDRendererState) te.getRendererState();
         if (rendererState != null) {
             long tick = te.getWorld().getTotalWorldTime();
             float color = 1f;
@@ -73,9 +73,9 @@ public class AssemblerRenderer extends TileEntitySpecialRenderer<AssemblerTile> 
             JSGTextureLightningHelper.lightUpTexture(getWorld(), te.getPos(), color);
             GlStateManager.color(color, color, color, 1f);
             if (isMachineOn || workingTime < ANIMATION_TIME)
-                TextureLoader.getTexture(TextureLoader.getTextureResource("machine/assembler/assembler_on.png")).bindTexture();
+                TextureLoader.getTexture(TextureLoader.getTextureResource("machine/assembler/mcd_on.png")).bindTexture();
             else
-                TextureLoader.getTexture(TextureLoader.getTextureResource("machine/assembler/assembler_off.png")).bindTexture();
+                TextureLoader.getTexture(TextureLoader.getTextureResource("machine/assembler/mcd_off.png")).bindTexture();
             ElementEnum.molecular_constructor.render();
             GlStateManager.popMatrix();
 

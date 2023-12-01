@@ -13,20 +13,19 @@ import net.minecraft.util.ResourceLocation;
 import tauri.dev.jsg.JSG;
 import tauri.dev.jsg.block.JSGBlocks;
 import tauri.dev.jsg.integration.jei.AbstractJEIRecipe;
-import tauri.dev.jsg.machine.assembler.AssemblerRecipe;
 
 import javax.annotation.Nonnull;
 
-public class JEIAssemblerRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> {
+public class JEIMCDRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> {
 
     public static final String UID = "jsg_assembler";
-    public static final ResourceLocation BACK_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_assembler_jei.png");
+    public static final ResourceLocation BACK_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_mcd_jei");
 
     public final IDrawable background;
     public final IDrawable icon;
     public final IDrawable progressBar;
 
-    public JEIAssemblerRecipeCategory(IGuiHelper helper) {
+    public JEIMCDRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(BACK_TEXTURE, 0, 0, 157, 53);
         this.icon = helper.createDrawableIngredient(new ItemStack(JSGBlocks.MACHINE_ASSEMBLER));
         this.progressBar = helper.createAnimatedDrawable(helper.createDrawable(BACK_TEXTURE, 176, 128, 216 - 176, 142 - 128), 40, IDrawableAnimated.StartDirection.LEFT, false);

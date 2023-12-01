@@ -8,13 +8,13 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTank;
 import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import tauri.dev.jsg.block.machine.PCBFabricatorBlock;
-import tauri.dev.jsg.gui.container.machine.pcbfabricator.PCBFabricatorContainerGuiUpdate;
+import tauri.dev.jsg.gui.container.machine.pcbfabricator.CircuitFabricatorContainerGuiUpdate;
 import tauri.dev.jsg.machine.AbstractMachineRecipe;
-import tauri.dev.jsg.machine.pcbfabricator.PCBFabricatorRecipe;
-import tauri.dev.jsg.machine.pcbfabricator.PCBFabricatorRecipes;
+import tauri.dev.jsg.machine.pcbfabricator.CircuitFabricatorRecipe;
+import tauri.dev.jsg.machine.pcbfabricator.CircuitFabricatorRecipes;
 import tauri.dev.jsg.power.general.SmallEnergyStorage;
 import tauri.dev.jsg.renderer.machine.AbstractMachineRendererState;
-import tauri.dev.jsg.renderer.machine.PCBFabricatorRendererState;
+import tauri.dev.jsg.renderer.machine.CircuitFabricatorRendererState;
 import tauri.dev.jsg.sound.JSGSoundHelper;
 import tauri.dev.jsg.sound.SoundEventEnum;
 import tauri.dev.jsg.sound.SoundPositionedEnum;
@@ -25,9 +25,9 @@ import tauri.dev.jsg.util.JSGItemStackHandler;
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
 
-public class PCBFabricatorTile extends AbstractMachineTile {
+public class CircuitFabricatorTile extends AbstractMachineTile {
 
-    public PCBFabricatorRendererState rendererState = new PCBFabricatorRendererState();
+    public CircuitFabricatorRendererState rendererState = new CircuitFabricatorRendererState();
     public static final int CONTAINER_SIZE = 10;
     protected final JSGItemStackHandler itemStackHandler = new JSGItemStackHandler(CONTAINER_SIZE) {
 
@@ -87,8 +87,8 @@ public class PCBFabricatorTile extends AbstractMachineTile {
         for (int i = 0; i < 9; i++)
             stacks.add(itemStackHandler.getStackInSlot(i));
 
-        if(currentRecipe instanceof PCBFabricatorRecipe){
-            PCBFabricatorRecipe recipe = (PCBFabricatorRecipe) currentRecipe;
+        if(currentRecipe instanceof CircuitFabricatorRecipe){
+            CircuitFabricatorRecipe recipe = (CircuitFabricatorRecipe) currentRecipe;
             if (!itemStackHandler.insertItem(9, recipe.getResult(), true).equals(ItemStack.EMPTY)) return null;
             if (fluidHandler.getFluid() == null) return null;
             if (recipe.isOk(energyStorage.getEnergyStored(), new FluidStack(fluidHandler.getFluid(), fluidHandler.getFluidAmount()), stacks))
@@ -96,7 +96,7 @@ public class PCBFabricatorTile extends AbstractMachineTile {
             return null;
         }
 
-        for (PCBFabricatorRecipe recipe : PCBFabricatorRecipes.RECIPES) {
+        for (CircuitFabricatorRecipe recipe : CircuitFabricatorRecipes.RECIPES) {
             if (!itemStackHandler.insertItem(9, recipe.getResult(), true).equals(ItemStack.EMPTY)) continue;
             if (fluidHandler.getFluid() == null) continue;
             if (recipe.isOk(energyStorage.getEnergyStored(), new FluidStack(fluidHandler.getFluid(), fluidHandler.getFluidAmount()), stacks))
@@ -107,7 +107,7 @@ public class PCBFabricatorTile extends AbstractMachineTile {
 
     protected void workIsDone() {
         if (!isWorking || currentRecipe == null) return;
-        PCBFabricatorRecipe currentRecipe = (PCBFabricatorRecipe) this.currentRecipe;
+        CircuitFabricatorRecipe currentRecipe = (CircuitFabricatorRecipe) this.currentRecipe;
         itemStackHandler.insertItem(9, currentRecipe.getResult(), false);
         fluidHandler.drainInternal(currentRecipe.getSubFluidStack().amount, true);
         for (int i = 0; i < 9; i++) {
@@ -141,11 +141,11 @@ public class PCBFabricatorTile extends AbstractMachineTile {
     public State getState(StateTypeEnum stateType) {
         switch (stateType) {
             case GUI_UPDATE:
-                return new PCBFabricatorContainerGuiUpdate(energyStorage.getEnergyStored(), (fluidHandler.getFluid() != null ? new FluidStack(fluidHandler.getFluid(), fluidHandler.getFluidAmount()) : null), energyTransferedLastTick, machineStart, machineEnd);
+                return new CircuitFabricatorContainerGuiUpdate(energyStorage.getEnergyStored(), (fluidHandler.getFluid() != null ? new FluidStack(fluidHandler.getFluid(), fluidHandler.getFluidAmount()) : null), energyTransferedLastTick, machineStart, machineEnd);
             case RENDERER_UPDATE:
-                ItemStack stack = currentRecipe != null ? ((PCBFabricatorRecipe) currentRecipe).getResult() : itemStackHandler.getStackInSlot(9);
-                float[] colors = currentRecipe != null ? ((PCBFabricatorRecipe) currentRecipe).getBeamColors() : new float[]{1f, 1f, 1f};
-                return new PCBFabricatorRendererState(workStateChanged, machineProgress, isWorking, stack, colors);
+                ItemStack stack = currentRecipe != null ? ((CircuitFabricatorRecipe) currentRecipe).getResult() : itemStackHandler.getStackInSlot(9);
+                float[] colors = currentRecipe != null ? ((CircuitFabricatorRecipe) currentRecipe).getBeamColors() : new float[]{1f, 1f, 1f};
+                return new CircuitFabricatorRendererState(workStateChanged, machineProgress, isWorking, stack, colors);
         }
         return null;
     }
@@ -154,9 +154,9 @@ public class PCBFabricatorTile extends AbstractMachineTile {
     public State createState(StateTypeEnum stateType) {
         switch (stateType) {
             case GUI_UPDATE:
-                return new PCBFabricatorContainerGuiUpdate();
+                return new CircuitFabricatorContainerGuiUpdate();
             case RENDERER_UPDATE:
-                return new PCBFabricatorRendererState();
+                return new CircuitFabricatorRendererState();
         }
         return null;
     }
@@ -165,7 +165,7 @@ public class PCBFabricatorTile extends AbstractMachineTile {
     public void setState(StateTypeEnum stateType, State state) {
         switch (stateType) {
             case GUI_UPDATE:
-                PCBFabricatorContainerGuiUpdate guiUpdate = (PCBFabricatorContainerGuiUpdate) state;
+                CircuitFabricatorContainerGuiUpdate guiUpdate = (CircuitFabricatorContainerGuiUpdate) state;
                 energyStorage.setEnergyStored(guiUpdate.energyStored);
                 energyTransferedLastTick = guiUpdate.energyTransferedLastTick;
                 machineStart = guiUpdate.machineStart;
@@ -174,7 +174,7 @@ public class PCBFabricatorTile extends AbstractMachineTile {
                 markDirty();
                 break;
             case RENDERER_UPDATE:
-                rendererState = (PCBFabricatorRendererState) state;
+                rendererState = (CircuitFabricatorRendererState) state;
                 this.machineProgress = rendererState.machineProgress;
                 this.isWorking = rendererState.isWorking;
                 markDirty();

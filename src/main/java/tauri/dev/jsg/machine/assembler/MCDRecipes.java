@@ -10,9 +10,9 @@ import tauri.dev.jsg.item.JSGItems;
 
 import java.util.ArrayList;
 
-public class AssemblerRecipes {
+public class MCDRecipes {
 
-    public static AssemblerRecipe SG_MW_BASE_BLOCK = new AssemblerRecipe() {
+    public static MCDRecipe SG_MW_BASE_BLOCK = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.stargate_milkyway_base_block.name";
@@ -71,7 +71,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.STARGATE_MILKY_WAY_BASE_BLOCK);
         }
     };
-    public static AssemblerRecipe SG_MW_CHEVRON_BLOCK = new AssemblerRecipe() {
+    public static MCDRecipe SG_MW_CHEVRON_BLOCK = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.stargate_milkyway_chevron_block.name";
@@ -130,7 +130,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.STARGATE_MILKY_WAY_MEMBER_BLOCK, 2, JSGBlocks.STARGATE_MILKY_WAY_MEMBER_BLOCK.CHEVRON_META);
         }
     };
-    public static AssemblerRecipe SG_MW_RING_BLOCK = new AssemblerRecipe() {
+    public static MCDRecipe SG_MW_RING_BLOCK = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.stargate_milkyway_ring_block.name";
@@ -189,7 +189,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.STARGATE_MILKY_WAY_MEMBER_BLOCK, 2, JSGBlocks.STARGATE_MILKY_WAY_MEMBER_BLOCK.RING_META);
         }
     };
-    public static AssemblerRecipe SG_MW_DHD = new AssemblerRecipe() {
+    public static MCDRecipe SG_MW_DHD = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.dhd_block.name";
@@ -249,7 +249,7 @@ public class AssemblerRecipes {
         }
     };
 
-    public static AssemblerRecipe SG_PEG_BASE_BLOCK = new AssemblerRecipe() {
+    public static MCDRecipe SG_PEG_BASE_BLOCK = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.stargate_pegasus_base_block.name";
@@ -308,7 +308,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.STARGATE_PEGASUS_BASE_BLOCK);
         }
     };
-    public static AssemblerRecipe SG_PEG_CHEVRON_BLOCK = new AssemblerRecipe() {
+    public static MCDRecipe SG_PEG_CHEVRON_BLOCK = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.stargate_pegasus_chevron_block.name";
@@ -367,7 +367,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.STARGATE_PEGASUS_MEMBER_BLOCK, 2, JSGBlocks.STARGATE_PEGASUS_MEMBER_BLOCK.CHEVRON_META);
         }
     };
-    public static AssemblerRecipe SG_PEG_RING_BLOCK = new AssemblerRecipe() {
+    public static MCDRecipe SG_PEG_RING_BLOCK = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.stargate_pegasus_ring_block.name";
@@ -426,7 +426,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.STARGATE_PEGASUS_MEMBER_BLOCK, 2, JSGBlocks.STARGATE_PEGASUS_MEMBER_BLOCK.RING_META);
         }
     };
-    public static AssemblerRecipe SG_PEG_DHD = new AssemblerRecipe() {
+    public static MCDRecipe SG_PEG_DHD = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.dhd_pegasus_block.name";
@@ -486,7 +486,7 @@ public class AssemblerRecipes {
         }
     };
 
-    public static AssemblerRecipe SG_UNI_BASE_BLOCK = new AssemblerRecipe() {
+    public static MCDRecipe SG_UNI_BASE_BLOCK = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.stargate_universe_base_block.name";
@@ -545,7 +545,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.STARGATE_UNIVERSE_BASE_BLOCK);
         }
     };
-    public static AssemblerRecipe SG_UNI_CHEVRON_BLOCK = new AssemblerRecipe() {
+    public static MCDRecipe SG_UNI_CHEVRON_BLOCK = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.stargate_universe_chevron_block.name";
@@ -604,7 +604,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.STARGATE_UNIVERSE_MEMBER_BLOCK, 2, JSGBlocks.STARGATE_UNIVERSE_MEMBER_BLOCK.CHEVRON_META);
         }
     };
-    public static AssemblerRecipe SG_UNI_RING_BLOCK = new AssemblerRecipe() {
+    public static MCDRecipe SG_UNI_RING_BLOCK = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.stargate_universe_ring_block.name";
@@ -664,7 +664,7 @@ public class AssemblerRecipes {
         }
     };
 
-    public static AssemblerRecipe DESTINY_COUNTDOWN = new AssemblerRecipe() {
+    public static MCDRecipe DESTINY_COUNTDOWN = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.destiny_countdown_block.name";
@@ -718,7 +718,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.DESTINY_COUNTDOWN_BLOCK);
         }
     };
-    public static AssemblerRecipe DESTINY_BEARING = new AssemblerRecipe() {
+    public static MCDRecipe DESTINY_BEARING = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.destiny_bearing_block.name";
@@ -772,7 +772,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.DESTINY_BEARING_BLOCK);
         }
     };
-    public static AssemblerRecipe DESTINY_BLASTER = new AssemblerRecipe() {
+    public static MCDRecipe DESTINY_BLASTER = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.destiny_vent_block.name";
@@ -826,7 +826,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.DESTINY_VENT_BLOCK);
         }
     };
-    public static AssemblerRecipe DESTINY_FLOOR_CHEVRON = new AssemblerRecipe() {
+    public static MCDRecipe DESTINY_FLOOR_CHEVRON = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.destiny_chevron_block.name";
@@ -881,7 +881,7 @@ public class AssemblerRecipes {
         }
     };
 
-    public static AssemblerRecipe TR_GOAULD = new AssemblerRecipe() {
+    public static MCDRecipe TR_GOAULD = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.transportrings_goauld_block.name";
@@ -940,7 +940,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.TRANSPORT_RINGS_GOAULD_BLOCK);
         }
     };
-    public static AssemblerRecipe TR_ORI = new AssemblerRecipe() {
+    public static MCDRecipe TR_ORI = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.transportrings_ori_block.name";
@@ -999,7 +999,7 @@ public class AssemblerRecipes {
             return new ItemStack(JSGBlocks.TRANSPORT_RINGS_ORI_BLOCK);
         }
     };
-    public static AssemblerRecipe TR_ANCIENT = new AssemblerRecipe() {
+    public static MCDRecipe TR_ANCIENT = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.transportrings_ancient_block.name";
@@ -1059,7 +1059,7 @@ public class AssemblerRecipes {
         }
     };
 
-    public static AssemblerRecipe TR_GOAULD_CONTROLLER = new AssemblerRecipe() {
+    public static MCDRecipe TR_GOAULD_CONTROLLER = new MCDRecipe() {
         @Override
         public String getUnlocalizedName() {
             return "tile.jsg.transportrings_controller_goauld_block.name";
@@ -1119,7 +1119,7 @@ public class AssemblerRecipes {
         }
     };
 
-    public static AssemblerRecipe[] RECIPES = {
+    public static MCDRecipe[] RECIPES = {
             SG_MW_BASE_BLOCK,
             SG_MW_CHEVRON_BLOCK,
             SG_MW_RING_BLOCK,
@@ -1147,8 +1147,8 @@ public class AssemblerRecipes {
     };
 
     public static void addToConfig() {
-        CraftingConfig config = new CraftingConfig(AssemblerRecipe.ID);
-        for (AssemblerRecipe recipe : RECIPES) {
+        CraftingConfig config = new CraftingConfig(MCDRecipe.ID);
+        for (MCDRecipe recipe : RECIPES) {
             config.addKey(recipe.getResult().getItem().getRegistryName());
         }
         CraftingConfig.addConfig(config);

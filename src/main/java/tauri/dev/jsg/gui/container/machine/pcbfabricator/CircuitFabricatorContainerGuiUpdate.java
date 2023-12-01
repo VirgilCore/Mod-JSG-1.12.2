@@ -7,14 +7,14 @@ import tauri.dev.jsg.gui.container.machine.AbstractMachineContainerGuiUpdate;
 
 import java.nio.charset.StandardCharsets;
 
-public class PCBFabricatorContainerGuiUpdate extends AbstractMachineContainerGuiUpdate {
-    public PCBFabricatorContainerGuiUpdate() {
+public class CircuitFabricatorContainerGuiUpdate extends AbstractMachineContainerGuiUpdate {
+    public CircuitFabricatorContainerGuiUpdate() {
         super();
     }
 
     public FluidStack fluidStack;
 
-    public PCBFabricatorContainerGuiUpdate(int energyStored, FluidStack fluidStack, int energyTransferedLastTick, long machineStart, long machineEnd) {
+    public CircuitFabricatorContainerGuiUpdate(int energyStored, FluidStack fluidStack, int energyTransferedLastTick, long machineStart, long machineEnd) {
         super(energyStored, energyTransferedLastTick, machineStart, machineEnd);
         this.fluidStack = fluidStack;
     }

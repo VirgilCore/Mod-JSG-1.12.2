@@ -1,20 +1,18 @@
 package tauri.dev.jsg.renderer.machine;
 
 import io.netty.buffer.ByteBuf;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import tauri.dev.jsg.state.State;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PCBFabricatorRendererState extends AbstractMachineRendererState {
+public class CircuitFabricatorRendererState extends AbstractMachineRendererState {
 
     public List<Float> colors = new ArrayList<>();
-    public PCBFabricatorRendererState() {
+    public CircuitFabricatorRendererState() {
     }
 
-    public PCBFabricatorRendererState(long workStateChanged, int machineProgress, boolean isWorking, ItemStack workingOnItemStack, float[] colors) {
+    public CircuitFabricatorRendererState(long workStateChanged, int machineProgress, boolean isWorking, ItemStack workingOnItemStack, float[] colors) {
         super(workStateChanged, machineProgress, isWorking, workingOnItemStack);
         this.colors = new ArrayList<Float>() {{
             for (float color : colors) add(color);
