@@ -282,6 +282,7 @@ public class JSGStructure extends WorldGenerator {
                     worldToSpawn.setBlockToAir(dataPos.down()); // save block
                     break;
                 case "loot_ov":
+                case "loot_ov_an":
                 case "loot_nether":
                 case "loot_zpm":
                 case "loot_end":
