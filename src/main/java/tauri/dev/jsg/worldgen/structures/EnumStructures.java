@@ -109,7 +109,9 @@ public enum EnumStructures {
             }}, null, 15, Rotation.CLOCKWISE_90, 0.7, 0.8, EnumGenerationHeight.LOW),
     OVERWORLD_UNI("sg_overworld_universe", 0, true, false, SymbolTypeEnum.UNIVERSE, 10, 10, 1, true, JSGConfig.WorldGen.structures.stargateRandomGeneratorEnabled, JSGConfig.WorldGen.structures.stargateRGChanceOverworld, new OverworldProcessor(),
             new ArrayList<Block>() {{
-                add(Blocks.END_STONE);
+                add(Blocks.GRASS);
+                add(Blocks.DIRT);
+                add(Blocks.STONE);
             }}, null, 15, Rotation.CLOCKWISE_90, 0.7, 0.8, EnumGenerationHeight.LOW),
 
     // Nether
