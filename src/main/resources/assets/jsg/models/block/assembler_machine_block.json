@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "jsg:blocks/machines/assembler_machine",
-		"particle": "jsg:blocks/machines/assembler_machine"
+		"0": "jsg:blocks/machines/molecular_constructor",
+		"particle": "jsg:blocks/machines/molecular_constructor"
 	},
 	"elements": [
 		{

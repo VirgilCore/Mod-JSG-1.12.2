@@ -202,7 +202,7 @@ item.jsg.crystal_fragment.name=Kristálymag
 
 item.jsg.crystal_blue.name=Teleportációs Kristály
 item.jsg.crystal_red.name=Energiakristály
-item.jsg.crystal_ender.name=Végzetkristály
+item.jsg.crystal_teal.name=Végzetkristály
 item.jsg.crystal_yellow.name=Fény Kristály
 item.jsg.crystal_white.name=Fehér Kristály
 item.jsg.crystal_blue_pegasus.name=Pegazus Kristály
@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Transzportgyűrű Töredék (Ős)
 
 # holders
 item.jsg.holder_crystal.name=Kristálytartó
-item.jsg.holder_crystal_pegasus.name=Kristálytartó (Pegazus)
+item.jsg.holder_crystal_aqua.name=Kristálytartó (Pegazus)
 
 # notebook
 item.jsg.page_notebook.name=Jegyzetfüzet oldal
@@ -449,9 +449,9 @@ tile.jsg.transportrings_block.rings_distance=Távolság
 tile.jsg.beamer_block.name=Vetítőblokk
 
 # machines
-tile.jsg.assembler_machine_block.name=Ős Összeszerelő
+tile.jsg.molecular_constructor_block.name=Ős Összeszerelő
 tile.jsg.crystal_chamber_block.name=Kristálykamra
-tile.jsg.pcb_fabricator_block.name=PCB Összeszerelő
+tile.jsg.circuit_fabricator_block.name=PCB Összeszerelő
 tile.jsg.ore_washing_machine_block.name=Ércmosó
 
 # ancient sign

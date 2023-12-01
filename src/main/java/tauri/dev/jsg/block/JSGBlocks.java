@@ -133,7 +133,7 @@ public class JSGBlocks {
 
     public static final AssemblerBlock MACHINE_ASSEMBLER = new AssemblerBlock();
     public static final CrystalChamberBlock MACHINE_CHAMBER = new CrystalChamberBlock();
-    public static final PCBFabricatorBlock MACHINE_PCB_FABRICATOR = new PCBFabricatorBlock();
+    public static final PCBFabricatorBlock MACHINE_circuit_fabricator = new PCBFabricatorBlock();
     public static final OreWashingBlock MACHINE_ORE_WASHING = new OreWashingBlock();
     //public static final ChemLabControlBlock MACHINE_LAB = new ChemLabControlBlock();
     //public static final ChemLabConstructBlock MACHINE_CONSTRUCT = new ChemLabConstructBlock();
@@ -293,7 +293,7 @@ public class JSGBlocks {
 
             MACHINE_ASSEMBLER,
             MACHINE_CHAMBER,
-            MACHINE_PCB_FABRICATOR,
+            MACHINE_circuit_fabricator,
             MACHINE_ORE_WASHING,
             //MACHINE_LAB,
             //MACHINE_CONSTRUCT,

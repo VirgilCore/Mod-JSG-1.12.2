@@ -202,7 +202,7 @@ item.jsg.crystal_fragment.name=水晶种子
 
 item.jsg.crystal_blue.name=传送水晶
 item.jsg.crystal_red.name=能量水晶
-item.jsg.crystal_ender.name=末影水晶
+item.jsg.crystal_teal.name=末影水晶
 item.jsg.crystal_yellow.name=光能水晶
 item.jsg.crystal_white.name=白色水晶
 item.jsg.crystal_blue_pegasus.name=Pegasus Crystal
@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Transport Rings Fragment (Ancient)
 
 # holders
 item.jsg.holder_crystal.name=水晶稳定器
-item.jsg.holder_crystal_pegasus.name=Crystal Holder (pegasus)
+item.jsg.holder_crystal_aqua.name=Crystal Holder (pegasus)
 
 # notebook
 item.jsg.page_notebook.name=Notebook Page
@@ -449,9 +449,9 @@ tile.jsg.transportrings_block.rings_distance=Distance
 tile.jsg.beamer_block.name=Beamer Block
 
 # machines
-tile.jsg.assembler_machine_block.name=Ancient Assembler
+tile.jsg.molecular_constructor_block.name=Ancient Assembler
 tile.jsg.crystal_chamber_block.name=Crystal Chamber
-tile.jsg.pcb_fabricator_block.name=PCB Fabricator
+tile.jsg.circuit_fabricator_block.name=PCB Fabricator
 tile.jsg.ore_washing_machine_block.name=Ore Washing Machine
 
 # ancient sign

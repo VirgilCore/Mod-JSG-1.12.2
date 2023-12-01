@@ -202,7 +202,7 @@ item.jsg.crystal_fragment.name=Crystal Seed
 
 item.jsg.crystal_blue.name=Teleportation Crystal
 item.jsg.crystal_red.name=Power Crystal
-item.jsg.crystal_ender.name=Ender Crystal
+item.jsg.crystal_teal.name=Ender Crystal
 item.jsg.crystal_yellow.name=Light Crystal
 item.jsg.crystal_white.name=White Crystal
 item.jsg.crystal_blue_pegasus.name=Pegasus Crystal
@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Transport Rings Fragment (Ancient)
 
 # holders
 item.jsg.holder_crystal.name=Crystal Holder (Milky Way)
-item.jsg.holder_crystal_pegasus.name=Crystal Holder (Pegasus)
+item.jsg.holder_crystal_aqua.name=Crystal Holder (Pegasus)
 
 # notebook
 item.jsg.page_notebook.name=Stránka z deníčku
@@ -447,9 +447,9 @@ tile.jsg.transportrings_block.rings_distance=Vzdálenost
 tile.jsg.beamer_block.name=Paprsek
 
 # machines
-tile.jsg.assembler_machine_block.name=Antický Sestavovač
+tile.jsg.molecular_constructor_block.name=Antický Sestavovač
 tile.jsg.crystal_chamber_block.name=Crystal Chamber
-tile.jsg.pcb_fabricator_block.name=PCB Fabricator
+tile.jsg.circuit_fabricator_block.name=PCB Fabricator
 tile.jsg.ore_washing_machine_block.name=Ore Washing Machine
 
 # ancient sign

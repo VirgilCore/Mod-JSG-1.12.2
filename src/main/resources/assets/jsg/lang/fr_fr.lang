@@ -202,7 +202,7 @@ item.jsg.crystal_fragment.name=Graine de cristal
 
 item.jsg.crystal_blue.name=Cristal de téléportation
 item.jsg.crystal_red.name=Cristal de puissance
-item.jsg.crystal_ender.name=Cristal d'Ender
+item.jsg.crystal_teal.name=Cristal d'Ender
 item.jsg.crystal_yellow.name=Cristal de lumière
 item.jsg.crystal_white.name=Cristal blanc
 item.jsg.crystal_blue_pegasus.name=Cristal de Pégase
@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Fragment d'anneaux de transport de
 
 # Porteurs
 item.jsg.holder_crystal.name=Porte-cristal de la Voie lactée
-item.jsg.holder_crystal_pegasus.name=Porte-cristal de Pégase
+item.jsg.holder_crystal_aqua.name=Porte-cristal de Pégase
 
 # carnet de notes
 item.jsg.page_notebook.name=Page du carnet de notes
@@ -457,9 +457,9 @@ tile.jsg.transportrings_block.rings_distance=Distance
 tile.jsg.beamer_block.name=Bloc de Beamer 
 
 # Machines
-tile.jsg.assembler_machine_block.name=Assembleur des Anciens
+tile.jsg.molecular_constructor_block.name=Assembleur des Anciens
 tile.jsg.crystal_chamber_block.name=Chambre de cristal
-tile.jsg.pcb_fabricator_block.name=Fabricateur de circuits imprimés
+tile.jsg.circuit_fabricator_block.name=Fabricateur de circuits imprimés
 tile.jsg.ore_washing_machine_block.name=Lave-minerais
 
 # Signe ancien

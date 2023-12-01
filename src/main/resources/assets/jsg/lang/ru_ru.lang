@@ -202,7 +202,7 @@ item.jsg.crystal_fragment.name=Семя Кристалла
 
 item.jsg.crystal_blue.name=Телепортационный Кристалл
 item.jsg.crystal_red.name=Энергитический Кристалл
-item.jsg.crystal_ender.name=Эндер Кристалл
+item.jsg.crystal_teal.name=Эндер Кристалл
 item.jsg.crystal_yellow.name=Световой Кристалл
 item.jsg.crystal_white.name=Белый Кристалл
 item.jsg.crystal_blue_pegasus.name=Кристалл Пегаса
@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Фрагмент транспор�
 
 # holders
 item.jsg.holder_crystal.name=Держатель Кристалла
-item.jsg.holder_crystal_pegasus.name=Держатель Кристалла (Пегас)
+item.jsg.holder_crystal_aqua.name=Держатель Кристалла (Пегас)
 
 # notebook
 item.jsg.page_notebook.name=Страница блокнота
@@ -449,9 +449,9 @@ tile.jsg.transportrings_block.rings_distance=Расстояние
 tile.jsg.beamer_block.name=Лучевой Передатчик
 
 # machines
-tile.jsg.assembler_machine_block.name=Древний зборщик
+tile.jsg.molecular_constructor_block.name=Древний зборщик
 tile.jsg.crystal_chamber_block.name=Кристальная Камера
-tile.jsg.pcb_fabricator_block.name=Производитель печатных плат
+tile.jsg.circuit_fabricator_block.name=Производитель печатных плат
 tile.jsg.ore_washing_machine_block.name=Рудная стиральная машина
 
 # ancient sign

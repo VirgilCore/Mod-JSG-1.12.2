@@ -53,7 +53,7 @@ public class AssemblerRecipes {
 
             array.add(new ItemStack(JSGItems.CRYSTAL_BLUE));
             array.add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             array.add(new ItemStack(JSGItems.CRYSTAL_RED));
@@ -115,7 +115,7 @@ public class AssemblerRecipes {
             array.add(new ItemStack(JSGItems.FRAGMENT_MILKYWAY));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             return array;
         }
@@ -230,7 +230,7 @@ public class AssemblerRecipes {
 
             array.add(new ItemStack(JSGItems.CRYSTAL_RED));
             array.add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             array.add(new ItemStack(JSGItems.HOLDER_CRYSTAL));
@@ -290,7 +290,7 @@ public class AssemblerRecipes {
 
             array.add(new ItemStack(JSGItems.CRYSTAL_BLUE));
             array.add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             array.add(new ItemStack(JSGItems.CRYSTAL_YELLOW));
@@ -467,10 +467,10 @@ public class AssemblerRecipes {
 
             array.add(new ItemStack(JSGItems.CRYSTAL_BLUE));
             array.add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
-            array.add(new ItemStack(JSGItems.HOLDER_CRYSTAL_PEGASUS));
+            array.add(new ItemStack(JSGItems.HOLDER_crystal_aqua));
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             return array;
         }
@@ -527,7 +527,7 @@ public class AssemblerRecipes {
 
             array.add(new ItemStack(JSGItems.CRYSTAL_BLUE));
             array.add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             array.add(new ItemStack(JSGItems.CRYSTAL_RED));
@@ -589,7 +589,7 @@ public class AssemblerRecipes {
             array.add(new ItemStack(JSGItems.FRAGMENT_UNIVERSE));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             return array;
         }
@@ -922,7 +922,7 @@ public class AssemblerRecipes {
 
             array.add(new ItemStack(JSGItems.CRYSTAL_BLUE));
             array.add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             array.add(new ItemStack(JSGItems.CRYSTAL_RED));
@@ -981,7 +981,7 @@ public class AssemblerRecipes {
 
             array.add(new ItemStack(JSGItems.CRYSTAL_BLUE));
             array.add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
 
             array.add(new ItemStack(JSGItems.TRINIUM_INGOT));
             array.add(new ItemStack(JSGItems.CRYSTAL_RED));
@@ -1040,7 +1040,7 @@ public class AssemblerRecipes {
 
             array.add(new ItemStack(JSGItems.CRYSTAL_BLUE));
             array.add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
 
             array.add(new ItemStack(JSGItems.TITANIUM_INGOT));
             array.add(new ItemStack(JSGItems.CRYSTAL_RED));
@@ -1103,7 +1103,7 @@ public class AssemblerRecipes {
             array.add(new ItemStack(Items.GOLD_INGOT));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
-            array.add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+            array.add(new ItemStack(JSGItems.crystal_teal));
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             return array;
         }

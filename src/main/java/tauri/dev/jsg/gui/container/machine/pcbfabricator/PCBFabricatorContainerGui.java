@@ -15,7 +15,7 @@ import java.util.List;
 
 public class PCBFabricatorContainerGui extends GuiContainer {
 
-    private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_pcb_fabricator.png");
+    private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_circuit_fabricator.png");
 
     private final PCBFabricatorContainer container;
     private final FluidTankElement tank;
@@ -56,7 +56,7 @@ public class PCBFabricatorContainerGui extends GuiContainer {
 
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-        fontRenderer.drawString(I18n.format("tile.jsg.pcb_fabricator_block.name"), 7, 6, 4210752);
+        fontRenderer.drawString(I18n.format("tile.jsg.circuit_fabricator_block.name"), 7, 6, 4210752);
         fontRenderer.drawString(I18n.format("container.inventory"), 8, this.ySize - 96 + 2, 4210752);
 
         SmallEnergyStorage energyStorage = (SmallEnergyStorage) container.tile.getCapability(CapabilityEnergy.ENERGY, null);

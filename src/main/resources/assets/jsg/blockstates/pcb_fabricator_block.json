@@ -1,7 +1,7 @@
 {
 	"forge_marker": 1,
 	"defaults": {
-		"model": "jsg:pcb_fabricator"
+		"model": "jsg:circuit_fabricator"
 	},
 	"variants": {
 		"normal": [{}],

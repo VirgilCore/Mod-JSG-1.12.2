@@ -31,7 +31,7 @@ public class CrystalChamberRecipes {
             return 512;
         }
     };
-        public static final CrystalChamberRecipe CRYSTAL_REACTIVE = new CrystalChamberRecipe() {
+        public static final CrystalChamberRecipe crystal_orange = new CrystalChamberRecipe() {
 
         @Override
         public int getWorkingTime() {
@@ -40,12 +40,12 @@ public class CrystalChamberRecipes {
 
         @Override
         public FluidStack getSubFluidStack() {
-            return new FluidStack(JSGFluids.SILICON_MOLTEN_REACTIVE, ONE_INGOT_IN_FLUID_MB);
+            return new FluidStack(JSGFluids.SILICON_MOLTEN_ORANGE, ONE_INGOT_IN_FLUID_MB);
         }
 
         @Override
         public ItemStack getResult() {
-            return new ItemStack(JSGItems.CRYSTAL_REACTIVE);
+            return new ItemStack(JSGItems.crystal_orange);
         }
 
         @Override
@@ -75,7 +75,7 @@ public class CrystalChamberRecipes {
             return 512;
         }
     };
-    public static final CrystalChamberRecipe CRYSTAL_ENDER = new CrystalChamberRecipe() {
+    public static final CrystalChamberRecipe crystal_teal = new CrystalChamberRecipe() {
 
         @Override
         public int getWorkingTime() {
@@ -84,12 +84,12 @@ public class CrystalChamberRecipes {
 
         @Override
         public FluidStack getSubFluidStack() {
-            return new FluidStack(JSGFluids.SILICON_MOLTEN_ENDER, ONE_INGOT_IN_FLUID_MB);
+            return new FluidStack(JSGFluids.SILICON_MOLTEN_TEAL, ONE_INGOT_IN_FLUID_MB);
         }
 
         @Override
         public ItemStack getResult() {
-            return new ItemStack(JSGItems.CRYSTAL_ENDER);
+            return new ItemStack(JSGItems.crystal_teal);
         }
 
         @Override
@@ -150,7 +150,7 @@ public class CrystalChamberRecipes {
 
         @Override
         public FluidStack getSubFluidStack() {
-            return new FluidStack(JSGFluids.SILICON_MOLTEN_PEGASUS, ONE_INGOT_IN_FLUID_MB);
+            return new FluidStack(JSGFluids.SILICON_MOLTEN_AQUA, ONE_INGOT_IN_FLUID_MB);
         }
 
         @Override
@@ -167,7 +167,7 @@ public class CrystalChamberRecipes {
     public static final CrystalChamberRecipe[] RECIPES = {
             CRYSTAL_BLUE,
             CRYSTAL_RED,
-            CRYSTAL_ENDER,
+            crystal_teal,
             CRYSTAL_YELLOW,
             CRYSTAL_WHITE,
             CRYSTAL_BLUE_PEGASUS

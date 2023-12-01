@@ -12,7 +12,7 @@ public enum GuiIdEnum {
 	GUI_RINGS(5),
 	GUI_ASSEMBLER(6),
 	GUI_CRYSTAL_CHAMBER(7),
-	GUI_PCB_FABRICATOR(8),
+	GUI_circuit_fabricator(8),
 	GUI_ORE_WASHING(9),
 	GUI_ZPM_HUB(10),
 	GUI_ZPM_SLOT(11),

@@ -48,7 +48,7 @@ public class FluidLoggedAPIHandler {
             JSGBlocks.MACHINE_CHAMBER,
             JSGBlocks.MACHINE_ASSEMBLER,
             JSGBlocks.MACHINE_ORE_WASHING,
-            JSGBlocks.MACHINE_PCB_FABRICATOR,
+            JSGBlocks.MACHINE_circuit_fabricator,
 
             JSGBlocks.DESTINY_COUNTDOWN_BLOCK,
             JSGBlocks.ANCIENT_SIGN_BLOCK,

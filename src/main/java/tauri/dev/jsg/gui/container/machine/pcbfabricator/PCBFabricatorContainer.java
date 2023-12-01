@@ -59,7 +59,7 @@ public class PCBFabricatorContainer extends JSGContainer {
 
     @Override
     public Block[] getAllowedBlocks() {
-        return new Block[]{JSGBlocks.MACHINE_PCB_FABRICATOR};
+        return new Block[]{JSGBlocks.MACHINE_circuit_fabricator};
     }
 
     public PCBFabricatorContainer(IInventory playerInventory, World world, int x, int y, int z) {

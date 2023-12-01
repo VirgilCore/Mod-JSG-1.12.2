@@ -19,8 +19,8 @@ import javax.annotation.Nonnull;
 
 public class JEIPCBFabricatorRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> {
 
-    public static final String UID = "jsg_pcb_fabricator";
-    public static final ResourceLocation BACK_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_pcb_fabricator_jei.png");
+    public static final String UID = "jsg_circuit_fabricator";
+    public static final ResourceLocation BACK_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_circuit_fabricator_jei.png");
 
     public final IDrawable background;
     public final IDrawable icon;
@@ -30,7 +30,7 @@ public class JEIPCBFabricatorRecipeCategory implements IRecipeCategory<AbstractJ
     public JEIPCBFabricatorRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(BACK_TEXTURE, 0, 0, 137, 55);
         this.fluidMeter = helper.createDrawable(BACK_TEXTURE, 176, 32, 16, 54);
-        this.icon = helper.createDrawableIngredient(new ItemStack(JSGBlocks.MACHINE_PCB_FABRICATOR));
+        this.icon = helper.createDrawableIngredient(new ItemStack(JSGBlocks.MACHINE_circuit_fabricator));
         this.progressBar = helper.createAnimatedDrawable(helper.createDrawable(BACK_TEXTURE, 176, 0, 216 - 176, 15), 40, IDrawableAnimated.StartDirection.LEFT, false);
     }
 
@@ -43,7 +43,7 @@ public class JEIPCBFabricatorRecipeCategory implements IRecipeCategory<AbstractJ
     @Nonnull
     @Override
     public String getTitle() {
-        return I18n.format("tile.jsg.pcb_fabricator_block.name");
+        return I18n.format("tile.jsg.circuit_fabricator_block.name");
     }
 
     @Nonnull

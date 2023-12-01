@@ -202,7 +202,7 @@ item.jsg.crystal_fragment.name=Kristallkeim
 
 item.jsg.crystal_blue.name=Teleportationskristall
 item.jsg.crystal_red.name=Energiekristall
-item.jsg.crystal_ender.name=Enderkristall
+item.jsg.crystal_teal.name=Enderkristall
 item.jsg.crystal_yellow.name=Lichtkristall
 item.jsg.crystal_white.name=Weißerkristall
 item.jsg.crystal_blue_pegasus.name=Pegasuskristall
@@ -242,7 +242,7 @@ item.jsg.fragment_transportrings_ancient.name=Transportring Fragment (Antiker)
 
 # holders
 item.jsg.holder_crystal.name=Kristallhalter
-item.jsg.holder_crystal_pegasus.name=Pegasus Kristallhalter
+item.jsg.holder_crystal_aqua.name=Pegasus Kristallhalter
 
 # notebook
 item.jsg.page_notebook.name=Notizbuchseite
@@ -436,9 +436,9 @@ tile.jsg.transportrings_block.rings_distance=Entfernung
 tile.jsg.beamer_block.name=Transporter Block
 
 # machines
-tile.jsg.assembler_machine_block.name=Antiker Monteur
+tile.jsg.molecular_constructor_block.name=Antiker Monteur
 tile.jsg.crystal_chamber_block.name=Kristallkammer
-tile.jsg.pcb_fabricator_block.name=Leiterplattenhersteller
+tile.jsg.circuit_fabricator_block.name=Leiterplattenhersteller
 tile.jsg.ore_washing_machine_block.name=Erz Waschmaschine
 
 # ancient sign

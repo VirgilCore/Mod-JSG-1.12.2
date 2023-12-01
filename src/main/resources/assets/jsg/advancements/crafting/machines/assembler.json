@@ -11,7 +11,7 @@
       "translate": "advancement.assembler.desc"
     },
     "icon": {
-      "item": "jsg:assembler_machine_block"
+      "item": "jsg:molecular_constructor_block"
     },
     "frame": "goal",
     "show_toast": true,
@@ -25,7 +25,7 @@
       "conditions": {
         "items": [
           {
-            "item": "jsg:assembler_machine_block"
+            "item": "jsg:molecular_constructor_block"
           }
         ]
       }

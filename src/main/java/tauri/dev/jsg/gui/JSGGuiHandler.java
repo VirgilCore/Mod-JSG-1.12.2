@@ -63,7 +63,7 @@ public class JSGGuiHandler implements IGuiHandler {
             case GUI_CRYSTAL_CHAMBER:
                 return new CrystalChamberContainer(player.inventory, world, x, y, z);
 
-            case GUI_PCB_FABRICATOR:
+            case GUI_circuit_fabricator:
                 return new PCBFabricatorContainer(player.inventory, world, x, y, z);
 
             case GUI_ORE_WASHING:
@@ -110,7 +110,7 @@ public class JSGGuiHandler implements IGuiHandler {
             case GUI_CRYSTAL_CHAMBER:
                 return new CrystalChamberContainerGui(new CrystalChamberContainer(player.inventory, world, x, y, z));
 
-            case GUI_PCB_FABRICATOR:
+            case GUI_circuit_fabricator:
                 return new PCBFabricatorContainerGui(new PCBFabricatorContainer(player.inventory, world, x, y, z));
 
             case GUI_ORE_WASHING:

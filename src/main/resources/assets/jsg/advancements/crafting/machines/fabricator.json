@@ -11,7 +11,7 @@
       "translate": "advancement.pcb.desc"
     },
     "icon": {
-      "item": "jsg:pcb_fabricator_block"
+      "item": "jsg:circuit_fabricator_block"
     },
     "frame": "goal",
     "show_toast": true,
@@ -25,7 +25,7 @@
       "conditions": {
         "items": [
           {
-            "item": "jsg:pcb_fabricator_block"
+            "item": "jsg:circuit_fabricator_block"
           }
         ]
       }

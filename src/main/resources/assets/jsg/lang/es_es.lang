@@ -202,7 +202,7 @@ item.jsg.crystal_fragment.name=Semilla de cristal
 
 item.jsg.crystal_blue.name=Cristal de Teletransporte
 item.jsg.crystal_red.name=Cristal de Poder
-item.jsg.crystal_ender.name=Cristal Ender
+item.jsg.crystal_teal.name=Cristal Ender
 item.jsg.crystal_yellow.name=Cristal de Luz
 item.jsg.crystal_white.name=Cristal Blanco
 item.jsg.crystal_blue_pegasus.name=Cristal de Pegasus
@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Transport Rings Fragment (Ancient)
 
 # holders
 item.jsg.holder_crystal.name=Soporte de cristal
-item.jsg.holder_crystal_pegasus.name=Soporte de cristal (Pegasus)
+item.jsg.holder_crystal_aqua.name=Soporte de cristal (Pegasus)
 
 # notebook
 item.jsg.page_notebook.name=Notebook Page
@@ -449,9 +449,9 @@ tile.jsg.transportrings_block.rings_distance=Distance
 tile.jsg.beamer_block.name=Bloque beamer
 
 # machines
-tile.jsg.assembler_machine_block.name=Ancient Assembler
+tile.jsg.molecular_constructor_block.name=Ancient Assembler
 tile.jsg.crystal_chamber_block.name=Crystal Chamber
-tile.jsg.pcb_fabricator_block.name=PCB Fabricator
+tile.jsg.circuit_fabricator_block.name=PCB Fabricator
 tile.jsg.ore_washing_machine_block.name=Ore Washing Machine
 
 # ancient sign

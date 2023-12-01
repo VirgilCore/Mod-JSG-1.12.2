@@ -28,7 +28,7 @@
   },
 
   "result": {
-    "item": "jsg:pcb_fabricator_block",
+    "item": "jsg:circuit_fabricator_block",
     "data": 0,
     "count": 1
   }

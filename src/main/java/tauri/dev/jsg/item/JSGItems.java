@@ -109,11 +109,11 @@ public class JSGItems {
     public static final Item CRYSTAL_SEED = ItemHelper.createGenericItem("crystal_fragment", JSG_ITEMS_CREATIVE_TAB);
     public static final Item CRYSTAL_BLUE = ItemHelper.createGenericItem("crystal_blue", JSG_ITEMS_CREATIVE_TAB);
     public static final Item CRYSTAL_RED = ItemHelper.createGenericItem("crystal_red", JSG_ITEMS_CREATIVE_TAB);
-    public static final Item CRYSTAL_ENDER = ItemHelper.createGenericItem("crystal_ender", JSG_ITEMS_CREATIVE_TAB);
+    public static final Item CRYSTAL_TEAL = ItemHelper.createGenericItem("crystal_teal", JSG_ITEMS_CREATIVE_TAB);
     public static final Item CRYSTAL_YELLOW = ItemHelper.createGenericItem("crystal_yellow", JSG_ITEMS_CREATIVE_TAB);
     public static final Item CRYSTAL_WHITE = ItemHelper.createGenericItem("crystal_white", JSG_ITEMS_CREATIVE_TAB);
-    public static final Item CRYSTAL_BLUE_PEGASUS = ItemHelper.createGenericItem("crystal_blue_pegasus", JSG_ITEMS_CREATIVE_TAB);
-    public static final Item CRYSTAL_REACTIVE = ItemHelper.createGenericItem("crystal_reactive", JSG_ITEMS_CREATIVE_TAB);
+    public static final Item CRYSTAL_AQUA = ItemHelper.createGenericItem("crystal_aqua", JSG_ITEMS_CREATIVE_TAB);
+    public static final Item CRYSTAL_ORANGE = ItemHelper.createGenericItem("crystal_orange", JSG_ITEMS_CREATIVE_TAB);
 
     public static final Item CRYSTAL_TOKRA = ItemHelper.createGenericItem("crystal_tokra", JSG_ITEMS_CREATIVE_TAB);
 
@@ -122,7 +122,7 @@ public class JSGItems {
     public static final Item CIRCUIT_CONTROL_NAQUADAH = ItemHelper.createGenericItem("circuit_control_naquadah", JSG_ITEMS_CREATIVE_TAB);
 
     public static final Item HOLDER_CRYSTAL = ItemHelper.createGenericItem("holder_crystal", JSG_ITEMS_CREATIVE_TAB);
-    public static final Item HOLDER_CRYSTAL_PEGASUS = ItemHelper.createGenericItem("holder_crystal_pegasus", JSG_ITEMS_CREATIVE_TAB);
+    public static final Item HOLDER_crystal_aqua = ItemHelper.createGenericItem("holder_crystal_aqua", JSG_ITEMS_CREATIVE_TAB);
 
     public static final Item DHD_BRB = ItemHelper.createGenericItem("dhd_brb", JSG_ITEMS_CREATIVE_TAB);
     public static final Item DHD_BBB = ItemHelper.createGenericItem("dhd_bbb", JSG_ITEMS_CREATIVE_TAB);
@@ -254,12 +254,12 @@ public class JSGItems {
             CRYSTAL_SEED,
             CRYSTAL_BLUE,
             CRYSTAL_RED,
-            CRYSTAL_ENDER,
+            CRYSTAL_TEAL,
             CRYSTAL_YELLOW,
+            CRYSTAL_ORANGE,
             CRYSTAL_WHITE,
-            CRYSTAL_BLUE_PEGASUS,
+            CRYSTAL_AQUA,
             CRYSTAL_TOKRA,
-            CRYSTAL_REACTIVE,
 
             CRYSTAL_UPGRADE_CAPACITY,
             CRYSTAL_UPGRADE_EFFICIENCY,
@@ -282,7 +282,7 @@ public class JSGItems {
             FRAGMENT_TR_ANCIENT,
 
             HOLDER_CRYSTAL,
-            HOLDER_CRYSTAL_PEGASUS,
+            HOLDER_crystal_aqua,
 
             DHD_BRB,
             DHD_BBB,

@@ -122,7 +122,7 @@ public class PCBFabricatorRecipes {
             return new ArrayList<ItemStack>() {{
                 add(new ItemStack(JSGItems.CRYSTAL_YELLOW));
                 add(new ItemStack(JSGItems.CRYSTAL_RED));
-                add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+                add(new ItemStack(JSGItems.crystal_teal));
 
                 add(new ItemStack(JSGItems.TITANIUM_DUST));
                 add(new ItemStack(JSGItems.CIRCUIT_CONTROL_CRYSTAL));
@@ -187,7 +187,7 @@ public class PCBFabricatorRecipes {
             return new float[]{1f, 1f, 1f};
         }
     };
-    public static PCBFabricatorRecipe SG_CRYSTAL_PEGASUS = new PCBFabricatorRecipe() {
+    public static PCBFabricatorRecipe SG_crystal_aqua = new PCBFabricatorRecipe() {
         @Override
         public FluidStack getSubFluidStack() {
             return new FluidStack(JSGFluids.SILICON_MOLTEN_WHITE, ONE_INGOT_IN_FLUID_MB);
@@ -295,7 +295,7 @@ public class PCBFabricatorRecipes {
             return new ArrayList<ItemStack>() {{
                 add(new ItemStack(JSGItems.CRYSTAL_YELLOW));
                 add(new ItemStack(JSGItems.TITANIUM_DUST));
-                add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+                add(new ItemStack(JSGItems.crystal_teal));
 
                 add(new ItemStack(JSGItems.CRYSTAL_RED));
                 add(new ItemStack(JSGItems.CIRCUIT_CONTROL_CRYSTAL));
@@ -424,7 +424,7 @@ public class PCBFabricatorRecipes {
         public ArrayList<ItemStack> getPattern() {
             return new ArrayList<ItemStack>() {{
                 add(new ItemStack(JSGItems.CRYSTAL_BLUE_PEGASUS));
-                add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+                add(new ItemStack(JSGItems.crystal_teal));
                 add(new ItemStack(JSGItems.CRYSTAL_RED));
 
                 add(new ItemStack(JSGItems.NAQUADAH_DUST));
@@ -472,7 +472,7 @@ public class PCBFabricatorRecipes {
 
                 add(new ItemStack(JSGItems.CRYSTAL_RED));
                 add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-                add(new ItemStack(JSGItems.CRYSTAL_ENDER));
+                add(new ItemStack(JSGItems.crystal_teal));
 
                 add(new ItemStack(Items.QUARTZ));
                 add(new ItemStack(Items.QUARTZ));
@@ -584,7 +584,7 @@ public class PCBFabricatorRecipes {
 
             SG_CRYSTAL_GLYPH,
             SG_CRYSTAL_MILKYWAY,
-            SG_CRYSTAL_PEGASUS,
+            SG_crystal_aqua,
             SG_CRYSTAL_UNIVERSE,
 
             TR_CRYSTAL_GOAULD,

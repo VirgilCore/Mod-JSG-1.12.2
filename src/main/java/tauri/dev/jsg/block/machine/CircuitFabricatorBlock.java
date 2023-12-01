@@ -21,7 +21,7 @@ import tauri.dev.jsg.tileentity.machine.PCBFabricatorTile;
 import javax.annotation.Nonnull;
 
 public class PCBFabricatorBlock extends AbstractMachineBlock {
-    public static final String BLOCK_NAME = "pcb_fabricator_block";
+    public static final String BLOCK_NAME = "circuit_fabricator_block";
     public static final int MAX_ENERGY = 9_000_000;
     public static final int MAX_ENERGY_TRANSFER = 20_000;
     public static final int FLUID_CAPACITY = 5000;
@@ -49,7 +49,7 @@ public class PCBFabricatorBlock extends AbstractMachineBlock {
     @Override
     protected void showGui(EntityPlayer player, EnumHand hand, World world, BlockPos pos) {
         if (FluidUtil.interactWithFluidHandler(player, hand, world, pos, null)) return;
-        player.openGui(JSG.instance, GuiIdEnum.GUI_PCB_FABRICATOR.id, world, pos.getX(), pos.getY(), pos.getZ());
+        player.openGui(JSG.instance, GuiIdEnum.GUI_circuit_fabricator.id, world, pos.getX(), pos.getY(), pos.getZ());
     }
 
     @Override
