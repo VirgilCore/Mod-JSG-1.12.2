@@ -20,13 +20,13 @@ import tauri.dev.jsg.tileentity.machine.CircuitFabricatorTile;
 
 import javax.annotation.Nonnull;
 
-public class PCBFabricatorBlock extends AbstractMachineBlock {
+public class CircuitFabricatorBlock extends AbstractMachineBlock {
     public static final String BLOCK_NAME = "circuit_fabricator_block";
     public static final int MAX_ENERGY = 9_000_000;
     public static final int MAX_ENERGY_TRANSFER = 20_000;
     public static final int FLUID_CAPACITY = 5000;
 
-    public PCBFabricatorBlock() {
+    public CircuitFabricatorBlock() {
         super(BLOCK_NAME);
     }
 

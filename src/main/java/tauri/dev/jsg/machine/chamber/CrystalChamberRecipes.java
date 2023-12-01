@@ -45,7 +45,7 @@ public class CrystalChamberRecipes {
 
         @Override
         public ItemStack getResult() {
-            return new ItemStack(JSGItems.crystal_orange);
+            return new ItemStack(JSGItems.CRYSTAL_ORANGE);
         }
 
         @Override
@@ -89,7 +89,7 @@ public class CrystalChamberRecipes {
 
         @Override
         public ItemStack getResult() {
-            return new ItemStack(JSGItems.crystal_teal);
+            return new ItemStack(JSGItems.CRYSTAL_TEAL);
         }
 
         @Override
@@ -155,7 +155,7 @@ public class CrystalChamberRecipes {
 
         @Override
         public ItemStack getResult() {
-            return new ItemStack(JSGItems.CRYSTAL_BLUE_PEGASUS);
+            return new ItemStack(JSGItems.CRYSTAL_AQUA);
         }
 
         @Override

@@ -23,12 +23,12 @@ import tauri.dev.jsg.util.JSGAxisAlignedBB;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-public class AssemblerBlock extends AbstractMachineBlock {
+public class MCDBlock extends AbstractMachineBlock {
     public static final String BLOCK_NAME = "molecular_constructor_block";
     public static final int MAX_ENERGY = 9_000_000;
     public static final int MAX_ENERGY_TRANSFER = 20_000;
 
-    public AssemblerBlock() {
+    public MCDBlock() {
         super(BLOCK_NAME);
     }
 

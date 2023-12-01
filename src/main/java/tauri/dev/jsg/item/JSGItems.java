@@ -386,7 +386,7 @@ public class JSGItems {
 
             case "jsg:raw_pegasus_dhd_crystal":
             case "aunis:raw_pegasus_dhd_crystal":
-                return CRYSTAL_BLUE_PEGASUS;
+                return CRYSTAL_AQUA;
 
             default:
                 break;

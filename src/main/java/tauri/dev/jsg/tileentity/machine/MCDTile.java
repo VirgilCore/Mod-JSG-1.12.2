@@ -2,7 +2,7 @@ package tauri.dev.jsg.tileentity.machine;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import tauri.dev.jsg.block.machine.AssemblerBlock;
+import tauri.dev.jsg.block.machine.MCDBlock;
 import tauri.dev.jsg.gui.container.machine.assembler.MCDContainerGuiUpdate;
 import tauri.dev.jsg.item.JSGItems;
 import tauri.dev.jsg.machine.AbstractMachineRecipe;
@@ -61,7 +61,7 @@ public class MCDTile extends AbstractMachineTile {
             sendState(StateTypeEnum.RENDERER_UPDATE, getState(StateTypeEnum.RENDERER_UPDATE));
         }
     };
-    protected final SmallEnergyStorage energyStorage = new SmallEnergyStorage(AssemblerBlock.MAX_ENERGY, AssemblerBlock.MAX_ENERGY_TRANSFER) {
+    protected final SmallEnergyStorage energyStorage = new SmallEnergyStorage(MCDBlock.MAX_ENERGY, MCDBlock.MAX_ENERGY_TRANSFER) {
         @Override
         protected void onEnergyChanged() {
             markDirty();

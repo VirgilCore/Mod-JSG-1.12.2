@@ -7,7 +7,7 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTank;
 import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
-import tauri.dev.jsg.block.machine.PCBFabricatorBlock;
+import tauri.dev.jsg.block.machine.CircuitFabricatorBlock;
 import tauri.dev.jsg.gui.container.machine.pcbfabricator.CircuitFabricatorContainerGuiUpdate;
 import tauri.dev.jsg.machine.AbstractMachineRecipe;
 import tauri.dev.jsg.machine.pcbfabricator.CircuitFabricatorRecipe;
@@ -43,13 +43,13 @@ public class CircuitFabricatorTile extends AbstractMachineTile {
             sendState(StateTypeEnum.RENDERER_UPDATE, getState(StateTypeEnum.RENDERER_UPDATE));
         }
     };
-    protected final SmallEnergyStorage energyStorage = new SmallEnergyStorage(PCBFabricatorBlock.MAX_ENERGY, PCBFabricatorBlock.MAX_ENERGY_TRANSFER) {
+    protected final SmallEnergyStorage energyStorage = new SmallEnergyStorage(CircuitFabricatorBlock.MAX_ENERGY, CircuitFabricatorBlock.MAX_ENERGY_TRANSFER) {
         @Override
         protected void onEnergyChanged() {
             markDirty();
         }
     };
-    protected final FluidTank fluidHandler = new FluidTank(PCBFabricatorBlock.FLUID_CAPACITY) {
+    protected final FluidTank fluidHandler = new FluidTank(CircuitFabricatorBlock.FLUID_CAPACITY) {
         @Override
         public boolean canFillFluidType(FluidStack fluid) {
             return fluid != null;
