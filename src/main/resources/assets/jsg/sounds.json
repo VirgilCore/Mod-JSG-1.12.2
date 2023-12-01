@@ -356,21 +356,21 @@
   },
   "mcd_start": {
     "category": "ambient",
-    "subtitle": "jsg.subtitle.beamer_start",
+    "subtitle": "jsg.subtitle.mcd_start",
     "sounds": [
       "jsg:mcd/mcdstart"
     ]
   },
   "mcd_stop": {
     "category": "ambient",
-    "subtitle": "jsg.subtitle.beamer_stop",
+    "subtitle": "jsg.subtitle.mcd_stop",
     "sounds": [
       "jsg:mcd/mcdstop"
     ]
   },
   "mcd_loop": {
     "category": "ambient",
-    "subtitle": "jsg.subtitle.beamer_loop",
+    "subtitle": "jsg.subtitle.mcd_loop",
     "sounds": [
       "jsg:mcd/mcdloop"
     ]
