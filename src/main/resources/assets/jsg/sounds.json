@@ -206,10 +206,10 @@
     "category": "ambient",
     "subtitle": "jsg.subtitle.rings_transport",
     "sounds": [
-      "jsg:transportrings/transport/rings_transport-1"
-      "jsg:transportrings/transport/rings_transport-2"
-      "jsg:transportrings/transport/rings_transport-3"
-      "jsg:transportrings/transport/rings_transport-4"
+      "jsg:transportrings/transport/rings_transport-1",
+      "jsg:transportrings/transport/rings_transport-2",
+      "jsg:transportrings/transport/rings_transport-3",
+      "jsg:transportrings/transport/rings_transport-4",
       "jsg:transportrings/transport/rings_transport-5"
     ]
   },

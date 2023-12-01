@@ -400,7 +400,7 @@ tile.jsg.dhd_block.no_enough_power=DHD requires at least 10,000uI to operate pro
 tile.jsg.dhd_block.computer_dial=Computer dial is in progress
 tile.jsg.dhd_block.not_enough_power=Insufficient power
 
-tile.jsg.dhd_pegasus_block.name=Pegasus F Device (DHD)
+tile.jsg.dhd_pegasus_block.name=Pegasus Dial Home Device (DHD)
 tile.jsg.dhd_pegasus_block.unknown_buttons=This button isn't working
 
 # stargate - MW
