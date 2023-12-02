@@ -129,7 +129,7 @@ advancement.chamber.title=Grow, crystals, Grow!
 advancement.chamber.desc=Craft a Crystal Chamber
 
 advancement.pcb.title=Crystal based technology
-advancement.pcb.desc=Craft a PCB Fabricator
+advancement.pcb.desc=Craft a Circuit Fabricator
 
 advancement.ore_washing.title=Mine, Refine, Smelt, Repeat.
 advancement.ore_washing.desc=Craft an Electrolytic Ore Purifier
@@ -200,12 +200,13 @@ item.jsg.naquadah_nugget.name=Naquadah Nugget
 # crystals
 item.jsg.crystal_fragment.name=Crystal Seed
 
-item.jsg.crystal_blue.name=Teleportation Crystal
-item.jsg.crystal_red.name=Power Crystal
-item.jsg.crystal_teal.name=Ender Crystal
-item.jsg.crystal_yellow.name=Light Crystal
-item.jsg.crystal_white.name=White Crystal
-item.jsg.crystal_blue_pegasus.name=Pegasus Crystal
+item.jsg.crystal_blue.name=Logic Crystal
+item.jsg.crystal_red.name=Energy Crystal
+item.jsg.crystal_teal.name=Spacial Crystal
+item.jsg.crystal_yellow.name=Emission Crystal
+item.jsg.crystal_white.name=Data Crystal
+item.jsg.crystal_aqua.name=Processing Crystal
+item.jsg.crystal_orange.name=Modulation Crystal
 item.jsg.crystal_tokra.name=Tok'ra Crystal
 
 item.jsg.circuit_control_base.name=Control Circuit Base
@@ -241,7 +242,7 @@ item.jsg.fragment_transportrings_ancient.name=Ancient Transport Rings Fragment
 
 # holders
 item.jsg.holder_crystal.name=Milky Way Crystal Holder
-item.jsg.holder_crystal_aqua.name=Pegasus Crystal Holder
+item.jsg.holder_crystal_pegasus.name=Pegasus Crystal Holder
 
 # notebook
 item.jsg.page_notebook.name=Notebook Page
@@ -375,7 +376,7 @@ tile.jsg.trinium_block.name=Trinium Block
 tile.jsg.titanium_block.name=Titanium Block
 
 # decor blocks
-tile.jsg.tokra_crystal_block.name=Tokra Crystal Block
+tile.jsg.tokra_crystal_block.name=Tok'ra Crystal Block
 tile.jsg.destiny_countdown_block.name=Destiny Countdown Clock
 tile.jsg.destiny_bearing_block.name=Destiny Bearing
 tile.jsg.destiny_chevron_block.name=Destiny Floor Chevron
@@ -459,7 +460,7 @@ tile.jsg.beamer_block.name=Beamer Block
 # machines
 tile.jsg.molecular_constructor_block.name=Molecular Construction Device
 tile.jsg.crystal_chamber_block.name=Crystal Chamber
-tile.jsg.circuit_fabricator_block.name=PCB Fabricator
+tile.jsg.circuit_fabricator_block.name=Circuit Fabricator
 tile.jsg.ore_washing_machine_block.name=Electrolytic Ore Purifier
 
 # ancient sign
@@ -473,12 +474,12 @@ tile.jsg.ancient_sign.name=Ancient Sign
 # silicon
 fluid.silicon_molten_black=Molten Silicon
 fluid.silicon_molten_white=Refined Silicon
-fluid.silicon_molten_red=Power Blend
-fluid.silicon_molten_blue=Teleportation Blend
-fluid.silicon_molten_ender=Ender Blend
-fluid.silicon_molten_yellow=Light Blend
-fluid.silicon_molten_pegasus=Pegasus Blend
-fluid.silicon_molten_reactive=Reactive Blend
+fluid.silicon_molten_red=Energy Blend
+fluid.silicon_molten_blue=Logic Blend
+fluid.silicon_molten_teal=Spacial Blend
+fluid.silicon_molten_yellow=Emission Blend
+fluid.silicon_molten_aqua=Processing Blend
+fluid.silicon_molten_orange=Reactive Blend
 
 # naquadah
 fluid.naquadah_molten_raw=Liquid Naquadah

@@ -5,7 +5,7 @@
             "model": "forge:fluid",
             "transform": "forge:default-item",
             "custom": {
-                    "fluid": "silicon_molten_pegasus"
+                    "fluid": "silicon_molten_aqua"
             }
         }]
 	}

@@ -11,7 +11,7 @@ public class JSGFluids {
     public static final MoltenFluid SILICON_MOLTEN_BLACK = new MoltenFluid("silicon_molten_black");
     public static final MoltenFluid SILICON_MOLTEN_RED = new MoltenFluid("silicon_molten_red");
     public static final MoltenFluid SILICON_MOLTEN_BLUE = new MoltenFluid("silicon_molten_blue");
-    public static final MoltenFluid SILICON_MOLTEN_TEAL = new MoltenFluid("silicon_molten_ender");
+    public static final MoltenFluid SILICON_MOLTEN_TEAL = new MoltenFluid("silicon_molten_teal");
     public static final MoltenFluid SILICON_MOLTEN_AQUA = new MoltenFluid("silicon_molten_aqua");
     public static final MoltenFluid SILICON_MOLTEN_YELLOW = new MoltenFluid("silicon_molten_yellow");
     public static final MoltenFluid SILICON_MOLTEN_WHITE = new MoltenFluid("silicon_molten_white");

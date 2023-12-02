@@ -122,7 +122,7 @@ public class JSGItems {
     public static final Item CIRCUIT_CONTROL_NAQUADAH = ItemHelper.createGenericItem("circuit_control_naquadah", JSG_ITEMS_CREATIVE_TAB);
 
     public static final Item HOLDER_CRYSTAL = ItemHelper.createGenericItem("holder_crystal", JSG_ITEMS_CREATIVE_TAB);
-    public static final Item HOLDER_crystal_aqua = ItemHelper.createGenericItem("holder_crystal_aqua", JSG_ITEMS_CREATIVE_TAB);
+    public static final Item HOLDER_CRYSTAL_PEGASUS = ItemHelper.createGenericItem("holder_crystal_pegasus", JSG_ITEMS_CREATIVE_TAB);
 
     public static final Item DHD_BRB = ItemHelper.createGenericItem("dhd_brb", JSG_ITEMS_CREATIVE_TAB);
     public static final Item DHD_BBB = ItemHelper.createGenericItem("dhd_bbb", JSG_ITEMS_CREATIVE_TAB);
@@ -282,7 +282,7 @@ public class JSGItems {
             FRAGMENT_TR_ANCIENT,
 
             HOLDER_CRYSTAL,
-            HOLDER_crystal_aqua,
+            HOLDER_CRYSTAL_PEGASUS,
 
             DHD_BRB,
             DHD_BBB,
