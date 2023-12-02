@@ -1,4 +1,4 @@
-package tauri.dev.jsg.gui.container.machine.assembler;
+package tauri.dev.jsg.gui.container.machine.mcd;
 
 import tauri.dev.jsg.gui.container.machine.AbstractMachineContainerGuiUpdate;
 

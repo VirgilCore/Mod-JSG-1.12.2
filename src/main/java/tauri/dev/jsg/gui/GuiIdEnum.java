@@ -10,7 +10,7 @@ public enum GuiIdEnum {
 	GUI_BEAMER(3),
 	GUI_PEGASUS_DHD(4),
 	GUI_RINGS(5),
-	GUI_ASSEMBLER(6),
+	GUI_MCD(6),
 	GUI_CRYSTAL_CHAMBER(7),
 	GUI_circuit_fabricator(8),
 	GUI_ORE_WASHING(9),

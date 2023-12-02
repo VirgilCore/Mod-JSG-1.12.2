@@ -50,7 +50,7 @@ public class MCDBlock extends AbstractMachineBlock {
 
     @Override
     protected void showGui(EntityPlayer player, EnumHand hand, World world, BlockPos pos) {
-        player.openGui(JSG.instance, GuiIdEnum.GUI_ASSEMBLER.id, world, pos.getX(), pos.getY(), pos.getZ());
+        player.openGui(JSG.instance, GuiIdEnum.GUI_MCD.id, world, pos.getX(), pos.getY(), pos.getZ());
     }
 
     @Override

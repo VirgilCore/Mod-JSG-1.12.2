@@ -131,7 +131,7 @@ public class JSGBlocks {
     // -----------------------------------------------------------------------------
     // MACHINES
 
-    public static final MCDBlock MACHINE_ASSEMBLER = new MCDBlock();
+    public static final MCDBlock MACHINE_MCD = new MCDBlock();
     public static final CrystalChamberBlock MACHINE_CHAMBER = new CrystalChamberBlock();
     public static final CircuitFabricatorBlock MACHINE_circuit_fabricator = new CircuitFabricatorBlock();
     public static final OreWashingBlock MACHINE_ORE_WASHING = new OreWashingBlock();
@@ -212,7 +212,7 @@ public class JSGBlocks {
             TRANSPORT_RINGS_ANCIENT_BLOCK,
             TR_PLATFORM_BLOCK,
             BEAMER_BLOCK,
-            MACHINE_ASSEMBLER,
+            MACHINE_MCD,
             MACHINE_CHAMBER,
             //MACHINE_LAB,
             //MACHINE_CONSTRUCT,
@@ -291,7 +291,7 @@ public class JSGBlocks {
             INVISIBLE_BLOCK,
             IRIS_BLOCK,
 
-            MACHINE_ASSEMBLER,
+            MACHINE_MCD,
             MACHINE_CHAMBER,
             MACHINE_circuit_fabricator,
             MACHINE_ORE_WASHING,
@@ -399,9 +399,9 @@ public class JSGBlocks {
             case "aunis:transportrings_controller_block":
                 return TR_CONTROLLER_GOAULD_BLOCK;
 
-            case "jsg:stargate_assembler":
-            case "jsg:stargate_assembler_block":
-                return MACHINE_ASSEMBLER;
+            case "jsg:stargate_mcd":
+            case "jsg:stargate_mcd_block":
+                return MACHINE_MCD;
 
             case "aunis:zpm":
             case "aunis:zpmhub_block":

@@ -122,8 +122,8 @@ advancement.transportrings_ori.desc=Verwenden Sie Ori-Transportringe
 advancement.transportrings_ancient.title=Das Original könnte man sagen
 advancement.transportrings_ancient.desc=Verwenden Sie Antiker-Transportringe
 
-advancement.assembler.title=Antike Fabrik
-advancement.assembler.desc=Erstelle einen Antiken Monteur
+advancement.mcd.title=Antike Fabrik
+advancement.mcd.desc=Erstelle einen Antiken Monteur
 
 advancement.chamber.title=Wachse, Kristall, wachse!
 advancement.chamber.desc=Stelle eine Kristallkammer her
@@ -778,8 +778,8 @@ gui.beamer.invalid=Ungültig
 gui.gdo.send_code=Code Eingabe:
 gui.gdo.send_button=Code senden
 
-# assembler
-gui.assembler.name=Antiker Monteur
+# mcd
+gui.mcd.name=Antiker Monteur
 
 # ancient sign
 gui.ancient_sign.edit=Edit ancient text

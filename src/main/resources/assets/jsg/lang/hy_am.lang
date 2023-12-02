@@ -122,8 +122,8 @@ advancement.transportrings_ori.desc=Օգտագործեք Օռայի տրանսպ
 advancement.transportrings_ancient.title=Բնօրինակը կարող եք ասել
 advancement.transportrings_ancient.desc=Օգտագործեք հնագույն տրանսպորտային օղակներ
 
-advancement.assembler.title=Հնագույն գործարան
-advancement.assembler.desc=Ստեղծեք հնագույն հավաքիչ
+advancement.mcd.title=Հնագույն գործարան
+advancement.mcd.desc=Ստեղծեք հնագույն հավաքիչ
 
 advancement.chamber.title=Աճե՛ք, բյուրեղներ, աճե՛ք
 advancement.chamber.desc=Ստեղծեք բյուրեղյա խցիկ
@@ -799,8 +799,8 @@ gui.beamer.invalid=Invalid
 gui.gdo.send_code=Մուտքագրեք կոդը.
 gui.gdo.send_button=Ուղարկել կոդը
 
-# assembler
-gui.assembler.name=Հին հավաքիչ
+# mcd
+gui.mcd.name=Հին հավաքիչ
 
 # ancient sign
 gui.ancient_sign.edit=Խմբագրել հին տեքստը

@@ -122,8 +122,8 @@ advancement.transportrings_ori.desc=Használj Ori Transzportgyűrűket
 advancement.transportrings_ancient.title=Az eredeti, ha úgy tetszik
 advancement.transportrings_ancient.desc=Használj Ős Transzportgyűrűket
 
-advancement.assembler.title=Ősgyár
-advancement.assembler.desc=Barkácsolj egy Ős Összeszerelőt
+advancement.mcd.title=Ősgyár
+advancement.mcd.desc=Barkácsolj egy Ős Összeszerelőt
 
 advancement.chamber.title=Nőjj, kristály, nőjj!
 advancement.chamber.desc=Barkácsolj egy Kristálykamrát
@@ -791,8 +791,8 @@ gui.beamer.invalid=Érvénytelen
 gui.gdo.send_code=Adja meg a kódot:
 gui.gdo.send_button=Kód küldése
 
-# assembler
-gui.assembler.name=Ős Összeszerelő
+# mcd
+gui.mcd.name=Ős Összeszerelő
 
 # ancient sign
 gui.ancient_sign.edit=Ős szöveg módosítása

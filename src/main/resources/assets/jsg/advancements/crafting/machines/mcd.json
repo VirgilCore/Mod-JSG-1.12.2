@@ -1,14 +1,14 @@
 {
   "display": {
     "title": {
-      "translate": "advancement.assembler.title",
+      "translate": "advancement.mcd.title",
       "color": "aqua",
       "bold": true,
       "underlined": false,
       "strikethrough": false
     },
     "description": {
-      "translate": "advancement.assembler.desc"
+      "translate": "advancement.mcd.desc"
     },
     "icon": {
       "item": "jsg:molecular_constructor_block"

@@ -24,7 +24,7 @@ import tauri.dev.jsg.gui.JSGGuiHandler;
 import tauri.dev.jsg.integration.FluidLoggedAPIHandler;
 import tauri.dev.jsg.integration.OCWrapperInterface;
 import tauri.dev.jsg.integration.ThermalIntegration;
-import tauri.dev.jsg.machine.assembler.MCDRecipes;
+import tauri.dev.jsg.machine.mcd.MCDRecipes;
 import tauri.dev.jsg.machine.chamber.CrystalChamberRecipes;
 import tauri.dev.jsg.machine.orewashing.OreWashingRecipes;
 import tauri.dev.jsg.machine.pcbfabricator.CircuitFabricatorRecipes;

@@ -18,7 +18,7 @@ import javax.annotation.Nonnull;
 
 public class JEIMCDRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> {
 
-    public static final String UID = "jsg_assembler";
+    public static final String UID = "jsg_mcd";
     public static final ResourceLocation BACK_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_mcd_jei");
 
     public final IDrawable background;
@@ -27,7 +27,7 @@ public class JEIMCDRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> 
 
     public JEIMCDRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(BACK_TEXTURE, 0, 0, 157, 53);
-        this.icon = helper.createDrawableIngredient(new ItemStack(JSGBlocks.MACHINE_ASSEMBLER));
+        this.icon = helper.createDrawableIngredient(new ItemStack(JSGBlocks.MACHINE_MCD));
         this.progressBar = helper.createAnimatedDrawable(helper.createDrawable(BACK_TEXTURE, 176, 128, 216 - 176, 142 - 128), 40, IDrawableAnimated.StartDirection.LEFT, false);
     }
 
@@ -40,7 +40,7 @@ public class JEIMCDRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> 
     @Nonnull
     @Override
     public String getTitle() {
-        return I18n.format("gui.assembler.name");
+        return I18n.format("gui.mcd.name");
     }
 
     @Nonnull
@@ -66,7 +66,7 @@ public class JEIMCDRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> 
     }
 
     @Override
-    public void setRecipe(@Nonnull IRecipeLayout recipeLayout, @Nonnull AbstractJEIRecipe assemblerRecipe, @Nonnull IIngredients ingredients) {
+    public void setRecipe(@Nonnull IRecipeLayout recipeLayout, @Nonnull AbstractJEIRecipe mcdRecipe, @Nonnull IIngredients ingredients) {
         // input slots
         recipeLayout.getItemStacks().init(0, true, 0, 18);
         int i = 0;

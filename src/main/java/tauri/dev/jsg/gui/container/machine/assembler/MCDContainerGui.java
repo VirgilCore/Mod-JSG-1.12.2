@@ -1,4 +1,4 @@
-package tauri.dev.jsg.gui.container.machine.assembler;
+package tauri.dev.jsg.gui.container.machine.mcd;
 
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
@@ -51,7 +51,7 @@ public class MCDContainerGui extends GuiContainer {
 
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-        fontRenderer.drawString(I18n.format("gui.assembler.name"), 7, 6, 4210752);
+        fontRenderer.drawString(I18n.format("gui.mcd.name"), 7, 6, 4210752);
         fontRenderer.drawString(I18n.format("container.inventory"), 8, this.ySize - 96 + 2, 4210752);
 
         SmallEnergyStorage energyStorage = (SmallEnergyStorage) container.tile.getCapability(CapabilityEnergy.ENERGY, null);

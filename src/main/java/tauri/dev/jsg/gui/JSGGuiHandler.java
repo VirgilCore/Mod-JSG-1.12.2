@@ -14,8 +14,8 @@ import tauri.dev.jsg.gui.container.dhd.DHDMilkyWayContainer;
 import tauri.dev.jsg.gui.container.dhd.DHDMilkyWayContainerGui;
 import tauri.dev.jsg.gui.container.dhd.DHDPegasusContainer;
 import tauri.dev.jsg.gui.container.dhd.DHDPegasusContainerGui;
-import tauri.dev.jsg.gui.container.machine.assembler.MCDContainer;
-import tauri.dev.jsg.gui.container.machine.assembler.MCDContainerGui;
+import tauri.dev.jsg.gui.container.machine.mcd.MCDContainer;
+import tauri.dev.jsg.gui.container.machine.mcd.MCDContainerGui;
 import tauri.dev.jsg.gui.container.machine.crystalchamber.CrystalChamberContainer;
 import tauri.dev.jsg.gui.container.machine.crystalchamber.CrystalChamberContainerGui;
 import tauri.dev.jsg.gui.container.machine.orewashing.OreWashingContainer;
@@ -57,7 +57,7 @@ public class JSGGuiHandler implements IGuiHandler {
             case GUI_RINGS:
                 return new TRContainer(player.inventory, world, x, y, z, isOp);
 
-            case GUI_ASSEMBLER:
+            case GUI_MCD:
                 return new MCDContainer(player.inventory, world, x, y, z);
 
             case GUI_CRYSTAL_CHAMBER:
@@ -104,7 +104,7 @@ public class JSGGuiHandler implements IGuiHandler {
             case GUI_RINGS:
                 return new TRGui(new BlockPos(x, y, z), new TRContainer(player.inventory, world, x, y, z, isOp));
 
-            case GUI_ASSEMBLER:
+            case GUI_MCD:
                 return new MCDContainerGui(new MCDContainer(player.inventory, world, x, y, z));
 
             case GUI_CRYSTAL_CHAMBER:

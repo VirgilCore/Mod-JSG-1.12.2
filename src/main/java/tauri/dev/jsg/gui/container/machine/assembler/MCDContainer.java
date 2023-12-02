@@ -1,4 +1,4 @@
-package tauri.dev.jsg.gui.container.machine.assembler;
+package tauri.dev.jsg.gui.container.machine.mcd;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -54,7 +54,7 @@ public class MCDContainer extends JSGContainer {
 
     @Override
     public Block[] getAllowedBlocks() {
-        return new Block[]{JSGBlocks.MACHINE_ASSEMBLER};
+        return new Block[]{JSGBlocks.MACHINE_MCD};
     }
 
     public MCDContainer(IInventory playerInventory, World world, int x, int y, int z) {

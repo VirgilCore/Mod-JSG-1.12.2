@@ -46,7 +46,7 @@ public class FluidLoggedAPIHandler {
             JSGBlocks.CAPACITOR_BLOCK_EMPTY,
 
             JSGBlocks.MACHINE_CHAMBER,
-            JSGBlocks.MACHINE_ASSEMBLER,
+            JSGBlocks.MACHINE_MCD,
             JSGBlocks.MACHINE_ORE_WASHING,
             JSGBlocks.MACHINE_circuit_fabricator,
 

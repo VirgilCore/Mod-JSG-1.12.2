@@ -122,8 +122,8 @@ advancement.transportrings_ori.desc=Use ori transport rings
 advancement.transportrings_ancient.title=The original you might say
 advancement.transportrings_ancient.desc=Use ancient transport rings
 
-advancement.assembler.title=Ancient factory
-advancement.assembler.desc=Craft an Ancient Assembler
+advancement.mcd.title=Ancient factory
+advancement.mcd.desc=Craft an Ancient Assembler
 
 advancement.chamber.title=Grow, crystals, Grow!
 advancement.chamber.desc=Craft a Crystal Chamber
@@ -791,8 +791,8 @@ gui.beamer.invalid=Invalid
 gui.gdo.send_code=Enter code:
 gui.gdo.send_button=Send code
 
-# assembler
-gui.assembler.name=Ancient Assembler
+# mcd
+gui.mcd.name=Ancient Assembler
 
 # ancient sign
 gui.ancient_sign.edit=Edit ancient text

@@ -122,8 +122,8 @@ advancement.transportrings_ori.desc=Используйте транспортн�
 advancement.transportrings_ancient.title=Оригинал можно сказать
 advancement.transportrings_ancient.desc=Используйте транспортные кольца Древних
 
-advancement.assembler.title=Древние строительство
-advancement.assembler.desc=Создать древний зборщик
+advancement.mcd.title=Древние строительство
+advancement.mcd.desc=Создать древний зборщик
 
 advancement.chamber.title=Растите, Кристаллы, Растите!
 advancement.chamber.desc=Создать Хрустальную камеру
@@ -791,8 +791,8 @@ gui.beamer.invalid=Неверно
 gui.gdo.send_code=Введите код:
 gui.gdo.send_button=Отправить
 
-# assembler
-gui.assembler.name=Древний Зборщик
+# mcd
+gui.mcd.name=Древний Зборщик
 
 # ancient sign
 gui.ancient_sign.edit=Редактировать древнюю надпись

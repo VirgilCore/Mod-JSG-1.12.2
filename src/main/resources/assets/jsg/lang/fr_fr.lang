@@ -122,8 +122,8 @@ advancement.transportrings_ori.desc=Utiliser les anneaux de transport ori
 advancement.transportrings_ancient.title=L'original, pourrait-on dire.
 advancement.transportrings_ancient.desc=Utiliser des anneaux de transport anciens
 
-advancement.assembler.title=Fabrication d'un assembleur antique
-advancement.assembler.desc=Fabriquer un assembleur ancien
+advancement.mcd.title=Fabrication d'un assembleur antique
+advancement.mcd.desc=Fabriquer un assembleur ancien
 
 advancement.chamber.title=Croissance, cristaux, croissance!
 advancement.chamber.desc=Fabriquer une chambre de cristal
@@ -800,7 +800,7 @@ gui.gdo.send_code=Entrez le code:
 gui.gdo.send_button=Envoyer le code
 
 # assembleur
-gui.assembler.name=Assembleur des Anciens
+gui.mcd.name=Assembleur des Anciens
 
 # signe Ancien
 gui.ancient_sign.edit=Editer le texte Ancien

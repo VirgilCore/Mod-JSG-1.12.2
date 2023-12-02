@@ -1,4 +1,4 @@
-package tauri.dev.jsg.machine.assembler;
+package tauri.dev.jsg.machine.mcd;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

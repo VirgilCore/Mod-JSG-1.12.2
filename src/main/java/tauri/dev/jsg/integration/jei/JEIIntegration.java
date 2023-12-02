@@ -20,8 +20,8 @@ import tauri.dev.jsg.integration.jei.category.JEICircuitFabricatorRecipeCategory
 import tauri.dev.jsg.integration.jei.recipe.*;
 import tauri.dev.jsg.item.JSGIconItem;
 import tauri.dev.jsg.item.JSGItems;
-import tauri.dev.jsg.machine.assembler.MCDRecipe;
-import tauri.dev.jsg.machine.assembler.MCDRecipes;
+import tauri.dev.jsg.machine.mcd.MCDRecipe;
+import tauri.dev.jsg.machine.mcd.MCDRecipes;
 import tauri.dev.jsg.machine.chamber.CrystalChamberRecipe;
 import tauri.dev.jsg.machine.chamber.CrystalChamberRecipes;
 import tauri.dev.jsg.machine.orewashing.OreWashingRecipe;

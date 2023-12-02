@@ -73,9 +73,9 @@ public class MCDRenderer extends TileEntitySpecialRenderer<MCDTile> {
             JSGTextureLightningHelper.lightUpTexture(getWorld(), te.getPos(), color);
             GlStateManager.color(color, color, color, 1f);
             if (isMachineOn || workingTime < ANIMATION_TIME)
-                TextureLoader.getTexture(TextureLoader.getTextureResource("machine/assembler/mcd_on.png")).bindTexture();
+                TextureLoader.getTexture(TextureLoader.getTextureResource("machine/mcd/mcd_on.png")).bindTexture();
             else
-                TextureLoader.getTexture(TextureLoader.getTextureResource("machine/assembler/mcd_off.png")).bindTexture();
+                TextureLoader.getTexture(TextureLoader.getTextureResource("machine/mcd/mcd_off.png")).bindTexture();
             ElementEnum.molecular_constructor.render();
             GlStateManager.popMatrix();
 
