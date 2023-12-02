@@ -1,7 +1,7 @@
 # Blender v3.1.2 OBJ File: ''
 # www.blender.org
-mtllib assembler.mtl
-o assembler
+mtllib mcd.mtl
+o mcd
 v 14.220808 25.670187 -20.395050
 v 15.007785 25.670187 -19.904282
 v 12.520535 25.670187 -16.576511
