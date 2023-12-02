@@ -294,7 +294,7 @@ public class CircuitFabricatorRecipes {
             return new ArrayList<ItemStack>() {{
                 add(new ItemStack(JSGItems.CRYSTAL_YELLOW));
                 add(new ItemStack(JSGItems.TITANIUM_DUST));
-                add(new ItemStack(JSGItems.CRYSTAL_TEAL);
+                add(new ItemStack(JSGItems.CRYSTAL_TEAL));
 
                 add(new ItemStack(JSGItems.CRYSTAL_RED));
                 add(new ItemStack(JSGItems.CIRCUIT_CONTROL_CRYSTAL));
@@ -423,7 +423,7 @@ public class CircuitFabricatorRecipes {
         public ArrayList<ItemStack> getPattern() {
             return new ArrayList<ItemStack>() {{
                 add(new ItemStack(JSGItems.CRYSTAL_AQUA));
-                add(new ItemStack(JSGItems.CRYSTAL_TEAL);
+                add(new ItemStack(JSGItems.CRYSTAL_TEAL));
                 add(new ItemStack(JSGItems.CRYSTAL_RED));
 
                 add(new ItemStack(JSGItems.NAQUADAH_DUST));
@@ -471,7 +471,7 @@ public class CircuitFabricatorRecipes {
 
                 add(new ItemStack(JSGItems.CRYSTAL_RED));
                 add(new ItemStack(JSGItems.CIRCUIT_CONTROL_NAQUADAH));
-                add(new ItemStack(JSGItems.CRYSTAL_TEAL);
+                add(new ItemStack(JSGItems.CRYSTAL_TEAL));
 
                 add(new ItemStack(Items.QUARTZ));
                 add(new ItemStack(Items.QUARTZ));
