@@ -121,7 +121,7 @@ public class CircuitFabricatorRecipes {
             return new ArrayList<ItemStack>() {{
                 add(new ItemStack(JSGItems.CRYSTAL_YELLOW));
                 add(new ItemStack(JSGItems.CRYSTAL_RED));
-                add(new ItemStack(JSGItems.CRYSTAL_TEAL);
+                add(new ItemStack(JSGItems.CRYSTAL_TEAL));
 
                 add(new ItemStack(JSGItems.TITANIUM_DUST));
                 add(new ItemStack(JSGItems.CIRCUIT_CONTROL_CRYSTAL));
