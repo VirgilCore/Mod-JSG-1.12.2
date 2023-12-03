@@ -24,7 +24,7 @@ config.jsg.rings=Transport Rings Config
 config.jsg.rings.tooltip=Configuration of Transport Rings
 
 config.jsg.dhd=DHD Config
-config.jsg.dhd.tooltip=Configuration of DHD and Universe Dialer
+config.jsg.dhd.tooltip=Configuration of DHD and Ancient Remote
 
 config.jsg.beamers=Beamers Config
 config.jsg.beamers.tooltip=Configuration of Beamers
@@ -122,17 +122,17 @@ advancement.transportrings_ori.desc=Use ori transport rings
 advancement.transportrings_ancient.title=The original you might say
 advancement.transportrings_ancient.desc=Use ancient transport rings
 
-advancement.assembler.title=The Ancient's factory
-advancement.assembler.desc=Craft the Molecular Construction Device
+advancement.mcd.title=The Ancient's factory
+advancement.mcd.desc=Craft the Molecular Construction Device
 
 advancement.chamber.title=Grow, crystals, Grow!
 advancement.chamber.desc=Craft a Crystal Chamber
 
 advancement.pcb.title=Crystal based technology
-advancement.pcb.desc=Craft a PCB Fabricator
+advancement.pcb.desc=Craft a Circuit Fabricator
 
-advancement.ore_washing.title=Mine, Wash, Smelt, Repeat.
-advancement.ore_washing.desc=Craft an Ore Washing Machine
+advancement.ore_washing.title=Mine, Refine, Smelt, Repeat.
+advancement.ore_washing.desc=Craft an Electrolytic Ore Purifier
 
 advancement.chemicals.title=Is this Janus' secret lab?
 advancement.chemicals.desc=Craft an Ancient Chemical Lab
@@ -200,12 +200,13 @@ item.jsg.naquadah_nugget.name=Naquadah Nugget
 # crystals
 item.jsg.crystal_fragment.name=Crystal Seed
 
-item.jsg.crystal_blue.name=Teleportation Crystal
-item.jsg.crystal_red.name=Power Crystal
-item.jsg.crystal_ender.name=Ender Crystal
-item.jsg.crystal_yellow.name=Light Crystal
-item.jsg.crystal_white.name=White Crystal
-item.jsg.crystal_blue_pegasus.name=Pegasus Crystal
+item.jsg.crystal_blue.name=Logic Crystal
+item.jsg.crystal_red.name=Energy Crystal
+item.jsg.crystal_teal.name=Spacial Crystal
+item.jsg.crystal_yellow.name=Emission Crystal
+item.jsg.crystal_white.name=Data Crystal
+item.jsg.crystal_aqua.name=Processing Crystal
+item.jsg.crystal_orange.name=Modulation Crystal
 item.jsg.crystal_tokra.name=Tok'ra Crystal
 
 item.jsg.circuit_control_base.name=Control Circuit Base
@@ -264,9 +265,9 @@ item.jsg.beamer_crystal_fluid.name=Beamer Fluid Crystal
 item.jsg.beamer_crystal_items.name=Beamer Items Crystal
 item.jsg.beamer_crystal_laser.name=Beamer Laser Crystal
 
-# universe dialer
-item.jsg.universe_dialer.name=Universe Dialer
-item.jsg.universe_dialer.broken.name=Broken Universe Dialer
+# Ancient Remote
+item.jsg.universe_dialer.name=Ancient Remote
+item.jsg.universe_dialer.broken.name=Broken Ancient Remote
 item.jsg.universe_dialer.saved_gates=Saved gates: %s
 item.jsg.universe_dialer.not_linked=Not linked
 item.jsg.universe_dialer.gate_busy=Gate is busy
@@ -282,7 +283,7 @@ item.jsg.universe_dialer.aborting=Aborting dial
 item.jsg.universe_dialer.abort=Abort
 item.jsg.universe_dialer.dial_start=Dialing the gate...
 item.jsg.universe_dialer.not_dialing=Not dialing
-item.jsg.universe_dialer.dialer_broke=Dialer cracked to prevent minecraft from crash
+item.jsg.universe_dialer.dialer_broke=Remote cracked to prevent minecraft from crashing
 item.jsg.universe_dialer.oc_name=Entry name
 item.jsg.universe_dialer.oc_address=OpenComputers' modem's address (Leave blank for broadcast)
 item.jsg.universe_dialer.oc_port=Modem's port
@@ -375,7 +376,7 @@ tile.jsg.trinium_block.name=Trinium Block
 tile.jsg.titanium_block.name=Titanium Block
 
 # decor blocks
-tile.jsg.tokra_crystal_block.name=Tokra Crystal Block
+tile.jsg.tokra_crystal_block.name=Tok'ra Crystal Block
 tile.jsg.destiny_countdown_block.name=Destiny Countdown Clock
 tile.jsg.destiny_bearing_block.name=Destiny Bearing
 tile.jsg.destiny_chevron_block.name=Destiny Floor Chevron
@@ -392,7 +393,7 @@ prop.jsg.decor_drone_weapon_on_block.name=Ancient Drone (On)
 prop.jsg.decor_ancient_obelisk_block.name=Ancient Obelisk
 
 # dhd
-tile.jsg.dhd_block.name=Milky Way Dial Home Device
+tile.jsg.dhd_block.name=Milky Way Dial Home Device (DHD)
 tile.jsg.dhd_block.incoming_wormhole_warn=Unable to close an incoming wormhole
 tile.jsg.dhd_block.not_linked_warn=DHD is not linked to the gate
 tile.jsg.dhd_block.no_crystal_warn=DHD has no control crystal
@@ -400,7 +401,7 @@ tile.jsg.dhd_block.no_enough_power=DHD requires at least 10,000uI to operate pro
 tile.jsg.dhd_block.computer_dial=Computer dial is in progress
 tile.jsg.dhd_block.not_enough_power=Insufficient power
 
-tile.jsg.dhd_pegasus_block.name=Pegasus Dial Home Device
+tile.jsg.dhd_pegasus_block.name=Pegasus Dial Home Device (DHD)
 tile.jsg.dhd_pegasus_block.unknown_buttons=This button isn't working
 
 # stargate - MW
@@ -457,10 +458,10 @@ tile.jsg.transportrings_block.rings_distance=Distance
 tile.jsg.beamer_block.name=Beamer Block
 
 # machines
-tile.jsg.assembler_machine_block.name=Molecular Construction Device
+tile.jsg.molecular_constructor_block.name=Molecular Construction Device
 tile.jsg.crystal_chamber_block.name=Crystal Chamber
-tile.jsg.pcb_fabricator_block.name=PCB Fabricator
-tile.jsg.ore_washing_machine_block.name=Ore Washing Machine
+tile.jsg.circuit_fabricator_block.name=Circuit Fabricator
+tile.jsg.ore_washing_machine_block.name=Electrolytic Ore Purifier
 
 # ancient sign
 tile.jsg.ancient_sign.name=Ancient Sign
@@ -473,12 +474,12 @@ tile.jsg.ancient_sign.name=Ancient Sign
 # silicon
 fluid.silicon_molten_black=Molten Silicon
 fluid.silicon_molten_white=Refined Silicon
-fluid.silicon_molten_red=Power Blend
-fluid.silicon_molten_blue=Teleportation Blend
-fluid.silicon_molten_ender=Ender Blend
-fluid.silicon_molten_yellow=Light Blend
-fluid.silicon_molten_pegasus=Pegasus Blend
-fluid.silicon_molten_reactive=Reactive Blend
+fluid.silicon_molten_red=Energy Blend
+fluid.silicon_molten_blue=Logic Blend
+fluid.silicon_molten_teal=Spacial Blend
+fluid.silicon_molten_yellow=Emission Blend
+fluid.silicon_molten_aqua=Processing Blend
+fluid.silicon_molten_orange=Reactive Blend
 
 # naquadah
 fluid.naquadah_molten_raw=Liquid Naquadah
@@ -715,13 +716,13 @@ gui.stargate.iris.opened=Open
 gui.stargate.iris.closed=Closed
 gui.stargate.iris.auto=Automatic
 gui.stargate.iris.oc=OC
-gui.stargate.iris.dialer=Dialer
+gui.stargate.iris.dialer=Remote
 gui.stargate.iris.opened_help=Iris is permanently open
 gui.stargate.iris.closed_help=Iris is permanently closed
 gui.stargate.iris.auto_help=Iris automatically closes on incoming wormhole,
 gui.stargate.iris.auto1_help=it can be opened with GDO by sending code set in field
 gui.stargate.iris.oc_help=Iris can be controlled by open computers
-gui.stargate.iris.dialer_help=Iris can be controlled by universe dialer
+gui.stargate.iris.dialer_help=Iris can be controlled by Ancient Remote
 
 gui.stargate.biome_overlay=Biome overlay
 gui.stargate.biome_overlay.help=Insert blocks to override
@@ -800,8 +801,8 @@ gui.beamer.invalid=Invalid
 gui.gdo.send_code=Enter code:
 gui.gdo.send_button=Send code
 
-# assembler
-gui.assembler.name=Molecular Construction Device
+# mcd
+gui.mcd.name=Molecular Construction Device
 
 # ancient sign
 gui.ancient_sign.edit=Edit ancient text
@@ -811,12 +812,12 @@ gui.ancient_sign.edit=Edit ancient text
 # -------------------
 # KEY BINDINGS
 
-config.jsg.mode_scroll=Universe dialer mode scroll
-config.jsg.mode_up=Universe dialer mode up
-config.jsg.mode_down=Universe dialer mode down
-config.jsg.address_scroll=Universe dialer/Notebook address scroll
-config.jsg.address_up=Universe dialer/Notebook address up
-config.jsg.address_down=Universe dialer/Notebook address down
+config.jsg.mode_scroll=Ancient Remote mode scroll
+config.jsg.mode_up=Ancient Remote mode up
+config.jsg.mode_down=Ancient Remote mode down
+config.jsg.address_scroll=Ancient Remote/Notebook address scroll
+config.jsg.address_up=Ancient Remote/Notebook address up
+config.jsg.address_down=Ancient Remote/Notebook address down
 config.jsg.address_edit=Open address edit menu
 
 # -------------------
@@ -878,9 +879,9 @@ jsg.subtitle.washer_loop=Washer purifies ore
 jsg.subtitle.washer_toggle=Washer toggles
 jsg.subtitle.page_flip=Page flips
 jsg.subtitle.gdo_button_beep=Pressed GDO button
-jsg.subtitle.universe_dialer_beep=Universe Dialer started dialing
-jsg.subtitle.universe_dialer_change_mode=Changed Universe Dialer mode
-jsg.subtitle.universe_dialer_connect=Universe Dialer connected
+jsg.subtitle.universe_dialer_beep=Ancient Remote started dialing
+jsg.subtitle.universe_dialer_change_mode=Changed Ancient Remote mode
+jsg.subtitle.universe_dialer_connect=Ancient Remote connected
 
 jsg.subtitle.item_zat_shoot=Zat'nik'tel fires
 jsg.subtitle.item_staff_shoot=Ma'Tok Staff Weapon fires

@@ -107,6 +107,12 @@ public enum EnumStructures {
             new ArrayList<Block>() {{
                 add(Blocks.END_STONE);
             }}, null, 15, Rotation.CLOCKWISE_90, 0.7, 0.8, EnumGenerationHeight.LOW),
+    OVERWORLD_UNI("sg_overworld_universe", 0, true, false, SymbolTypeEnum.UNIVERSE, 10, 10, 1, true, JSGConfig.WorldGen.structures.stargateRandomGeneratorEnabled, JSGConfig.WorldGen.structures.stargateRGChanceOverworld, new OverworldProcessor(),
+            new ArrayList<Block>() {{
+                add(Blocks.GRASS);
+                add(Blocks.DIRT);
+                add(Blocks.STONE);
+            }}, null, 15, Rotation.CLOCKWISE_90, 0.7, 0.8, EnumGenerationHeight.LOW),
 
     // Nether
     NETHER_MW("sg_nether_milkyway", 0, true, false, SymbolTypeEnum.MILKYWAY, 16, 16, -1, false, false, 0, new NetherProcessor(),
@@ -130,6 +136,11 @@ public enum EnumStructures {
                 add(Blocks.SAND);
                 add(Blocks.GRASS);
             }}, null, 35, Rotation.NONE, 0.88, 0.8, EnumGenerationHeight.LOW),
+    ANCIENT_CAVE("tr_ancient", 21, false, true, null, 7, 7, 0, false, JSGConfig.WorldGen.structures.structuresRandomGeneratorEnabled, 0.0005f, null,
+            new ArrayList<Block>() {{
+                add(Blocks.SAND);
+                add(Blocks.GRASS);
+            }}, null, 35, Rotation.NONE, 0.88, 0.8, EnumGenerationHeight.LOW),
 
     ANCIENT_TOTEM("ancient_totem", 0, false, false, null, 3, 3, 0, false, JSGConfig.WorldGen.structures.structuresRandomGeneratorEnabled, 0.000008f, new OverworldProcessor(),
             new ArrayList<Block>(){{
@@ -147,7 +158,7 @@ public enum EnumStructures {
             null, null, 35, Rotation.CLOCKWISE_90, 0.7, 0.8, EnumGenerationHeight.MIDDLE, true),
     INTERNAL_PG("sg_plains_pegasus", 0, true, false, SymbolTypeEnum.PEGASUS, 13, 13, 0, true, false, 0, new OverworldProcessor(),
             null, null, 35, Rotation.CLOCKWISE_90, 0.8, 0.8, EnumGenerationHeight.MIDDLE, true),
-    INTERNAL_UNI("sg_end_universe", 0, true, false, SymbolTypeEnum.UNIVERSE, 10, 10, 1, true, false, 0, new OverworldProcessor(),
+    INTERNAL_UNI("sg_overworld_universe", 0, true, false, SymbolTypeEnum.UNIVERSE, 10, 10, 1, true, false, 0, new OverworldProcessor(),
             null, null, 15, Rotation.CLOCKWISE_90, 0.7, 0.8, EnumGenerationHeight.LOW, true),
     ;
 

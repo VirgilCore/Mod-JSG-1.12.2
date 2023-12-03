@@ -6,7 +6,7 @@ import tauri.dev.jsg.config.craftings.CraftingConfig;
 import tauri.dev.jsg.machine.AbstractMachineRecipe;
 
 public abstract class OreWashingRecipe extends AbstractMachineRecipe {
-    public static final String ID = "Ore Washing Machine";
+    public static final String ID = "Electrolytic Ore Purifier";
 
     public abstract FluidStack getSubFluidStack();
 

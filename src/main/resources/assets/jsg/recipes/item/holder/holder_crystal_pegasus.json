@@ -12,12 +12,12 @@
 		},
 		
 		"R": {
-			"item": "jsg:crystal_ender"
+			"item": "jsg:crystal_teal"
 		}
 	},
 	
 	"result": {
-		"item": "jsg:holder_crystal_pegasus",
+		"item": "jsg:holder_crystal_aqua",
 		"count": 1
 	}
 }

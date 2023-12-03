@@ -85,7 +85,7 @@ public enum ElementEnum {
     // --------------------------------------------------------------------------------------------
     // Machines
 
-    ASSEMBLER_MACHINE("machine/assembler/assembler.obj", "machine/assembler/assembler_base.png", false),
+    molecular_constructor("machine/mcd/mcd.obj", "machine/mcd/mcd_base.png", false),
 
     // Lab
     LAB_MACHINE("machine/lab/machine.obj", "machine/lab/machine.jpg", false),

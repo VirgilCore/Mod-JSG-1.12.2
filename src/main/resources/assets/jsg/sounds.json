@@ -206,7 +206,11 @@
     "category": "ambient",
     "subtitle": "jsg.subtitle.rings_transport",
     "sounds": [
-      "jsg:transportrings/rings_transport"
+      "jsg:transportrings/transport/rings_transport-01",
+      "jsg:transportrings/transport/rings_transport-02",
+      "jsg:transportrings/transport/rings_transport-03",
+      "jsg:transportrings/transport/rings_transport-04",
+      "jsg:transportrings/transport/rings_transport-05"
     ]
   },
   "rings_controller_goauld_button": {
@@ -348,6 +352,27 @@
     "subtitle": "jsg.subtitle.beamer_loop",
     "sounds": [
       "jsg:beamer/beamer_loop"
+    ]
+  },
+  "mcd_start": {
+    "category": "ambient",
+    "subtitle": "jsg.subtitle.mcd_start",
+    "sounds": [
+      "jsg:mcd/mcdstart"
+    ]
+  },
+  "mcd_stop": {
+    "category": "ambient",
+    "subtitle": "jsg.subtitle.mcd_stop",
+    "sounds": [
+      "jsg:mcd/mcdstop"
+    ]
+  },
+  "mcd_loop": {
+    "category": "ambient",
+    "subtitle": "jsg.subtitle.mcd_loop",
+    "sounds": [
+      "jsg:mcd/mcdloop"
     ]
   },
   "washer_toggle": {

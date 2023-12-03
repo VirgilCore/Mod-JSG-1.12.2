@@ -54,8 +54,8 @@ public class JSGStructuresGenerator implements IWorldGenerator {
             return structure.getActualStructure(dimId).generateStructure(world, new BlockPos((chunkX * 16), 32, (chunkZ * 16)), random, worldToSpawn);
         }
 
-        int x = (chunkX * 16) + (notCommandGen ? random.nextInt(15) : 0);
-        int z = (chunkZ * 16) + (notCommandGen ? random.nextInt(15) : 0);
+        int x = (chunkX * 16) + (notCommandGen ? random.nextInt(8) : 0);
+        int z = (chunkZ * 16) + (notCommandGen ? random.nextInt(8) : 0);
         JSGStructurePos structurePos = checkForPlace(worldToSpawn, chunkX, chunkZ, structure, dimId);
         if (notRandomGen && notCommandGen) {
             int tries = 0;

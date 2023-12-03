@@ -122,8 +122,8 @@ advancement.transportrings_ori.desc=Օգտագործեք Օռայի տրանսպ
 advancement.transportrings_ancient.title=Բնօրինակը կարող եք ասել
 advancement.transportrings_ancient.desc=Օգտագործեք հնագույն տրանսպորտային օղակներ
 
-advancement.assembler.title=Հնագույն գործարան
-advancement.assembler.desc=Ստեղծեք հնագույն հավաքիչ
+advancement.mcd.title=Հնագույն գործարան
+advancement.mcd.desc=Ստեղծեք հնագույն հավաքիչ
 
 advancement.chamber.title=Աճե՛ք, բյուրեղներ, աճե՛ք
 advancement.chamber.desc=Ստեղծեք բյուրեղյա խցիկ
@@ -202,7 +202,7 @@ item.jsg.crystal_fragment.name=Բյուրեղյա սերմ
 
 item.jsg.crystal_blue.name=Հեռահաղորդակցության բյուրեղ
 item.jsg.crystal_red.name=Էներգիայի բյուրեղ
-item.jsg.crystal_ender.name=Էնդեր բյուրեղ
+item.jsg.crystal_teal.name=Էնդեր բյուրեղ
 item.jsg.crystal_yellow.name=Լույսի բյուրեղ
 item.jsg.crystal_white.name=Սպիտակ բյուրեղ
 item.jsg.crystal_blue_pegasus.name=Պեգասի բյուրեղ
@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Տրանսպորտային օղա�
 
 # holders
 item.jsg.holder_crystal.name=Բյուրեղապակ (Ծիր Կաթին)
-item.jsg.holder_crystal_pegasus.name=Բյուրեղապակ (Պեգասի)
+item.jsg.holder_crystal_aqua.name=Բյուրեղապակ (Պեգասի)
 
 # notebook
 item.jsg.page_notebook.name=Նոթատետրի էջ
@@ -457,9 +457,9 @@ tile.jsg.transportrings_block.rings_distance=Հեռավորությունը
 tile.jsg.beamer_block.name=ճառագայթիչի բլոկ
 
 # machines
-tile.jsg.assembler_machine_block.name=Հին հավաքիչ
+tile.jsg.molecular_constructor_block.name=Հին հավաքիչ
 tile.jsg.crystal_chamber_block.name=Բյուրեղյա պալատ
-tile.jsg.pcb_fabricator_block.name=PCB արտադրող
+tile.jsg.circuit_fabricator_block.name=PCB արտադրող
 tile.jsg.ore_washing_machine_block.name=Հանքաքարի լվացքի մեքենա
 
 # ancient sign
@@ -799,8 +799,8 @@ gui.beamer.invalid=Invalid
 gui.gdo.send_code=Մուտքագրեք կոդը.
 gui.gdo.send_button=Ուղարկել կոդը
 
-# assembler
-gui.assembler.name=Հին հավաքիչ
+# mcd
+gui.mcd.name=Հին հավաքիչ
 
 # ancient sign
 gui.ancient_sign.edit=Խմբագրել հին տեքստը

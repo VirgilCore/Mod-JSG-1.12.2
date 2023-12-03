@@ -13,21 +13,21 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.oredict.OreDictionary;
 import tauri.dev.jsg.block.JSGBlocks;
-import tauri.dev.jsg.integration.jei.category.JEIAssemblerRecipeCategory;
+import tauri.dev.jsg.integration.jei.category.JEIMCDRecipeCategory;
 import tauri.dev.jsg.integration.jei.category.JEIChamberRecipeCategory;
 import tauri.dev.jsg.integration.jei.category.JEIOreWashingRecipeCategory;
-import tauri.dev.jsg.integration.jei.category.JEIPCBFabricatorRecipeCategory;
+import tauri.dev.jsg.integration.jei.category.JEICircuitFabricatorRecipeCategory;
 import tauri.dev.jsg.integration.jei.recipe.*;
 import tauri.dev.jsg.item.JSGIconItem;
 import tauri.dev.jsg.item.JSGItems;
-import tauri.dev.jsg.machine.assembler.AssemblerRecipe;
-import tauri.dev.jsg.machine.assembler.AssemblerRecipes;
+import tauri.dev.jsg.machine.mcd.MCDRecipe;
+import tauri.dev.jsg.machine.mcd.MCDRecipes;
 import tauri.dev.jsg.machine.chamber.CrystalChamberRecipe;
 import tauri.dev.jsg.machine.chamber.CrystalChamberRecipes;
 import tauri.dev.jsg.machine.orewashing.OreWashingRecipe;
 import tauri.dev.jsg.machine.orewashing.OreWashingRecipes;
-import tauri.dev.jsg.machine.pcbfabricator.PCBFabricatorRecipe;
-import tauri.dev.jsg.machine.pcbfabricator.PCBFabricatorRecipes;
+import tauri.dev.jsg.machine.pcbfabricator.CircuitFabricatorRecipe;
+import tauri.dev.jsg.machine.pcbfabricator.CircuitFabricatorRecipes;
 
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
@@ -69,7 +69,7 @@ public final class JEIIntegration implements IModPlugin {
 
         recipes.clear();
         // Assembler recipes
-        for (AssemblerRecipe recipe : AssemblerRecipes.RECIPES) {
+        for (MCDRecipe recipe : MCDRecipes.RECIPES) {
             if(recipe.isDisabled()) continue;
 
             AbstractJEIRecipe newRecipe = new AbstractJEIRecipe() {
@@ -89,7 +89,7 @@ public final class JEIIntegration implements IModPlugin {
             };
             recipes.add(newRecipe);
         }
-        registry.addRecipes(recipes, JEIAssemblerRecipeCategory.UID);
+        registry.addRecipes(recipes, JEIMCDRecipeCategory.UID);
 
         recipes.clear();
         // Chamber recipes
@@ -115,7 +115,7 @@ public final class JEIIntegration implements IModPlugin {
 
         recipes.clear();
         // Fabricator recipes
-        for (PCBFabricatorRecipe recipe : PCBFabricatorRecipes.RECIPES) {
+        for (CircuitFabricatorRecipe recipe : CircuitFabricatorRecipes.RECIPES) {
             if(recipe.isDisabled()) continue;
 
             AbstractJEIRecipe newRecipe = new AbstractJEIRecipe() {
@@ -138,7 +138,7 @@ public final class JEIIntegration implements IModPlugin {
             };
             recipes.add(newRecipe);
         }
-        registry.addRecipes(recipes, JEIPCBFabricatorRecipeCategory.UID);
+        registry.addRecipes(recipes, JEICircuitFabricatorRecipeCategory.UID);
 
         recipes.clear();
         // Ore Washing recipes
@@ -165,9 +165,9 @@ public final class JEIIntegration implements IModPlugin {
 
     @Override
     public void registerCategories(@Nonnull IRecipeCategoryRegistration registry) {
-        registry.addRecipeCategories(new JEIAssemblerRecipeCategory(registry.getJeiHelpers().getGuiHelper()));
+        registry.addRecipeCategories(new JEIMCDRecipeCategory(registry.getJeiHelpers().getGuiHelper()));
         registry.addRecipeCategories(new JEIChamberRecipeCategory(registry.getJeiHelpers().getGuiHelper()));
-        registry.addRecipeCategories(new JEIPCBFabricatorRecipeCategory(registry.getJeiHelpers().getGuiHelper()));
+        registry.addRecipeCategories(new JEICircuitFabricatorRecipeCategory(registry.getJeiHelpers().getGuiHelper()));
         registry.addRecipeCategories(new JEIOreWashingRecipeCategory(registry.getJeiHelpers().getGuiHelper()));
     }
 }

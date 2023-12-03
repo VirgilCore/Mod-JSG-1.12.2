@@ -1,10 +1,3 @@
-# DISCLAIMER
-
-
-This is a fork of JSG, that is only meant to be used by specific people. DO NOT UPLOAD ANY BUILDS OF THIS REPO. If you do that, it would violate the liscense of the JSG mod.
-
-I don't take ownership of any of the original code from JSG. This is simply an alternatice version which has a few code changes for my server. It is to be used for that, and that ONLY.
-
 # **Just Stargate Mod**
 ***
 Just Stargate Mod (JSG) is a Stargate-based Minecraft mod. It aims to closely resemble the franchise and be the most immersive Stargate mod out there.

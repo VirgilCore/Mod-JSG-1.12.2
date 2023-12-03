@@ -122,8 +122,8 @@ advancement.transportrings_ori.desc=Használj Ori Transzportgyűrűket
 advancement.transportrings_ancient.title=Az eredeti, ha úgy tetszik
 advancement.transportrings_ancient.desc=Használj Ős Transzportgyűrűket
 
-advancement.assembler.title=Ősgyár
-advancement.assembler.desc=Barkácsolj egy Ős Összeszerelőt
+advancement.mcd.title=Ősgyár
+advancement.mcd.desc=Barkácsolj egy Ős Összeszerelőt
 
 advancement.chamber.title=Nőjj, kristály, nőjj!
 advancement.chamber.desc=Barkácsolj egy Kristálykamrát
@@ -202,7 +202,7 @@ item.jsg.crystal_fragment.name=Kristálymag
 
 item.jsg.crystal_blue.name=Teleportációs Kristály
 item.jsg.crystal_red.name=Energiakristály
-item.jsg.crystal_ender.name=Végzetkristály
+item.jsg.crystal_teal.name=Végzetkristály
 item.jsg.crystal_yellow.name=Fény Kristály
 item.jsg.crystal_white.name=Fehér Kristály
 item.jsg.crystal_blue_pegasus.name=Pegazus Kristály
@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Transzportgyűrű Töredék (Ős)
 
 # holders
 item.jsg.holder_crystal.name=Kristálytartó
-item.jsg.holder_crystal_pegasus.name=Kristálytartó (Pegazus)
+item.jsg.holder_crystal_aqua.name=Kristálytartó (Pegazus)
 
 # notebook
 item.jsg.page_notebook.name=Jegyzetfüzet oldal
@@ -449,9 +449,9 @@ tile.jsg.transportrings_block.rings_distance=Távolság
 tile.jsg.beamer_block.name=Vetítőblokk
 
 # machines
-tile.jsg.assembler_machine_block.name=Ős Összeszerelő
+tile.jsg.molecular_constructor_block.name=Ős Összeszerelő
 tile.jsg.crystal_chamber_block.name=Kristálykamra
-tile.jsg.pcb_fabricator_block.name=PCB Összeszerelő
+tile.jsg.circuit_fabricator_block.name=PCB Összeszerelő
 tile.jsg.ore_washing_machine_block.name=Ércmosó
 
 # ancient sign
@@ -791,8 +791,8 @@ gui.beamer.invalid=Érvénytelen
 gui.gdo.send_code=Adja meg a kódot:
 gui.gdo.send_button=Kód küldése
 
-# assembler
-gui.assembler.name=Ős Összeszerelő
+# mcd
+gui.mcd.name=Ős Összeszerelő
 
 # ancient sign
 gui.ancient_sign.edit=Ős szöveg módosítása
