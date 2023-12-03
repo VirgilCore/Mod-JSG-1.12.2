@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Transzportgyűrű Töredék (Ős)
 
 # holders
 item.jsg.holder_crystal.name=Kristálytartó
-item.jsg.holder_crystal_aqua.name=Kristálytartó (Pegazus)
+item.jsg.HOLDER_CRYSTAL_PEGASUS.name=Kristálytartó (Pegazus)
 
 # notebook
 item.jsg.page_notebook.name=Jegyzetfüzet oldal

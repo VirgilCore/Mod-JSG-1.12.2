@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Տրանսպորտային օղա�
 
 # holders
 item.jsg.holder_crystal.name=Բյուրեղապակ (Ծիր Կաթին)
-item.jsg.holder_crystal_aqua.name=Բյուրեղապակ (Պեգասի)
+item.jsg.HOLDER_CRYSTAL_PEGASUS.name=Բյուրեղապակ (Պեգասի)
 
 # notebook
 item.jsg.page_notebook.name=Նոթատետրի էջ

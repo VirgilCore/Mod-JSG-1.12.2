@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Transport Rings Fragment (Ancient)
 
 # holders
 item.jsg.holder_crystal.name=Soporte de cristal
-item.jsg.holder_crystal_aqua.name=Soporte de cristal (Pegasus)
+item.jsg.HOLDER_CRYSTAL_PEGASUS.name=Soporte de cristal (Pegasus)
 
 # notebook
 item.jsg.page_notebook.name=Notebook Page

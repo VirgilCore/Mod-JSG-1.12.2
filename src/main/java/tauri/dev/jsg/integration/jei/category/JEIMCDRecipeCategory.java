@@ -19,7 +19,7 @@ import javax.annotation.Nonnull;
 public class JEIMCDRecipeCategory implements IRecipeCategory<AbstractJEIRecipe> {
 
     public static final String UID = "jsg_mcd";
-    public static final ResourceLocation BACK_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_mcd_jei");
+    public static final ResourceLocation BACK_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_mcd_jei.png");
 
     public final IDrawable background;
     public final IDrawable icon;

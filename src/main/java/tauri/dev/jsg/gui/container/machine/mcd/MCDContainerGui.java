@@ -13,7 +13,7 @@ import java.util.List;
 
 public class MCDContainerGui extends GuiContainer {
 
-    private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_mcd");
+    private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation(JSG.MOD_ID, "textures/gui/container_mcd.png");
 
     private final MCDContainer container;
 

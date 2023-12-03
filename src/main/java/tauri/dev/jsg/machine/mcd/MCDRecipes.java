@@ -470,7 +470,7 @@ public class MCDRecipes {
             array.add(new ItemStack(JSGItems.CRYSTAL_TEAL));
 
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
-            array.add(new ItemStack(JSGItems.HOLDER_crystal_aqua));
+            array.add(new ItemStack(JSGItems.HOLDER_CRYSTAL_PEGASUS));
             array.add(new ItemStack(JSGItems.NAQUADAH_ALLOY));
             return array;
         }

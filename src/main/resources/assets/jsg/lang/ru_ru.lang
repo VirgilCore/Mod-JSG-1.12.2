@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Фрагмент транспор�
 
 # holders
 item.jsg.holder_crystal.name=Держатель Кристалла
-item.jsg.holder_crystal_aqua.name=Держатель Кристалла (Пегас)
+item.jsg.HOLDER_CRYSTAL_PEGASUS.name=Держатель Кристалла (Пегас)
 
 # notebook
 item.jsg.page_notebook.name=Страница блокнота

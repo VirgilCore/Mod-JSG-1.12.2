@@ -241,7 +241,7 @@ item.jsg.fragment_transportrings_ancient.name=Fragment d'anneaux de transport de
 
 # Porteurs
 item.jsg.holder_crystal.name=Porte-cristal de la Voie lactée
-item.jsg.holder_crystal_aqua.name=Porte-cristal de Pégase
+item.jsg.HOLDER_CRYSTAL_PEGASUS.name=Porte-cristal de Pégase
 
 # carnet de notes
 item.jsg.page_notebook.name=Page du carnet de notes
