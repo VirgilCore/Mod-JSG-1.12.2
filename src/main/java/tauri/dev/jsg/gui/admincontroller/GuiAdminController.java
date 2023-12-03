@@ -335,7 +335,7 @@ public class GuiAdminController extends JSGTexturedGui {
                     int heightMax = (int) (height * MAX_SCALE);
                     int widthMax = (isUniverse ? heightMax / 2 : heightMax);
 
-                    height *= (int) symbolSize;
+                    height *= symbolSize;
                     width = (isUniverse ? height / 2 : height);
 
                     if (stage <= 0.5) {
